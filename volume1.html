@@ -14,7 +14,7 @@
       line-height: 1.7;
     }
 
-    /* CONTAINER CENTRAL (EIXO DO VOLUME V) */
+    /* CONTEÚDO CENTRAL ÚNICO */
     .vmp-content {
       max-width: 640px;
       margin: 0 auto;
@@ -22,21 +22,37 @@
       text-align: center;
     }
 
-    h1 {
+    /* TÍTULOS */
+    h1, h2, h3, h4 {
       color: #FFD700;
-      margin-bottom: 40px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    h2 {
-      color: #FFD700;
-      margin-top: 40px;
+    h1 { margin-bottom: 40px; }
+    h2 { margin-top: 40px; }
+    h3 { margin-top: 32px; }
+    h4 {
+      margin-top: 12px;
+      font-weight: normal;
     }
 
+    /* TEXTO */
     p {
       text-align: center;
+      margin: 20px auto;
     }
 
-    /* BOTÃO OVAL PREMIUM */
+    /* IMAGENS / PLACEHOLDER */
+    img,
+    .imagem-placeholder {
+      display: block;
+      margin: 40px auto;
+      max-width: 100%;
+    }
+
+    /* BOTÃO OVAL PREMIUM (NÃO FIXO, NÃO TOPO) */
     .botao {
       display: inline-block;
       margin: 80px auto 20px;
@@ -54,21 +70,17 @@
     .botao:hover {
       opacity: 0.9;
     }
-
-    /* IMAGENS SEMPRE NO EIXO CENTRAL */
-    img {
-      display: block;
-      margin: 40px auto;
-      max-width: 100%;
-    }
   </style>
-
 </head>
+
 <body>
 
   <div class="vmp-content">
 
+    <!-- TÍTULO DO VOLUME (TOPO) -->
+    
     <h1>VOLUME I</h1>
+    
 
     <h2>O SILÊNCIO QUE ACORDA A PRESENÇA</h2>
 
