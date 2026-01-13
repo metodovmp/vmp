@@ -13,34 +13,46 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin: 0;
     }
+
     .aceito {
       color: #fff;
       font-size: 14px;
       letter-spacing: 2px;
       margin-bottom: 20px;
     }
+
     h1 {
       font-size: 42px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      line-height: 1.2;
     }
+
+    /* BOTÃO OVAL PREMIUM */
     .botao {
       display: inline-block;
-      padding: 15px 35px;
+      margin: 0 auto;
+      padding: 16px 48px;
       background-color: #FFD700;
       color: #000;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 6px;
+      border-radius: 999px; /* oval total */
       font-size: 16px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
 
   <div class="aceito">VOCÊ FOI ACEITO</div>
-<h1>PARABÉNS.<br>ENTRE NO VMP.</h1>
-
+  <h1>PARABÉNS.<br>ENTRE NO VMP.</h1>
 
   <a href="introducao.html" class="botao">PARABÉNS. ENTRE NO VMP</a>
 
