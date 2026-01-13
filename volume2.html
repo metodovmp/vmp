@@ -3,42 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>VMP — Volume II</title>
+
   <style>
     body {
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
+      margin: 0;
+      padding: 0;
       line-height: 1.7;
     }
-    h1 {
+
+    /* CONTEÚDO CENTRAL ÚNICO */
+    .vmp-content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* TÍTULOS */
+    h1, h2, h3, h4 {
       color: #FFD700;
       text-align: center;
-      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    h2 {
-      color: #FFD700;
-      margin-top: 40px;
+
+    h1 { margin-bottom: 40px; }
+    h2 { margin-top: 40px; }
+    h3 { margin-top: 32px; }
+    h4 {
+      margin-top: 12px;
+      font-weight: normal;
     }
-    .botao {
+
+    /* TEXTO */
+    p {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    /* IMAGENS / PLACEHOLDER */
+    img,
+    .imagem-placeholder {
       display: block;
+      margin: 40px auto;
+      max-width: 100%;
+    }
+
+    /* BOTÃO OVAL PREMIUM (NÃO FIXO, NÃO TOPO) */
+    .botao {
+      display: inline-block;
       margin: 80px auto 20px;
-      padding: 15px 35px;
+      padding: 16px 48px;
       background-color: #FFD700;
       color: #000;
-      text-align: center;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 6px;
-      width: fit-content;
+      border-radius: 999px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
+
 <body>
 
-<h1>VOLUME II</h1>
+  <div class="vmp-content">
+
+    <!-- TÍTULO DO VOLUME (TOPO) -->
+    <h1>VOLUME II</h1>
+
 
 <h2>CONFIANÇA QUE IMPÕE RESPEITO SEM FORÇAR</h2>
 
@@ -533,7 +574,7 @@ Presença surge da sustentação natural.</p>
   
 
 <a href="volume3.html" class="botao">
-  Prosseguir para o Volume III
+  Prosseguir para o próximo Volume III
 </a>
 
 </body>
