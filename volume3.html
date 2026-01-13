@@ -3,42 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>VMP — Volume III</title>
+
   <style>
     body {
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
+      margin: 0;
+      padding: 0;
       line-height: 1.7;
     }
-    h1 {
-      color: #FFD700;
+
+    /* CONTEÚDO CENTRAL ÚNICO */
+    .vmp-content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 20px;
       text-align: center;
-      margin-bottom: 40px;
     }
-    h2 {
-      color: #FFD700;
-      margin-top: 40px;
+
+    /* TÍTULOS PRINCIPAIS */
+    h1, h2 {
+      color: #FFD700; /* dourado */
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .botao {
+
+    h1 { margin-bottom: 40px; }
+    h2 { margin-top: 40px; }
+
+    /* SUBTÍTULOS (REALINHAMENTO, INSTALAÇÃO...) EM BRANCO */
+    h3, h4 {
+      color: #fff; /* branco */
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
+      font-weight: normal;
+    }
+
+    /* TEXTO */
+    p {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    /* IMAGENS / PLACEHOLDER */
+    img,
+    .imagem-placeholder {
       display: block;
+      margin: 40px auto;
+      max-width: 100%;
+    }
+
+    /* BOTÃO OVAL PREMIUM (NÃO FIXO, NÃO TOPO) */
+    .botao {
+      display: inline-block;
       margin: 80px auto 20px;
-      padding: 15px 35px;
+      padding: 16px 48px;
       background-color: #FFD700;
       color: #000;
-      text-align: center;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 6px;
-      width: fit-content;
+      border-radius: 999px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
+
 <body>
 
-<h1>VOLUME III</h1>
+  <div class="vmp-content">
+
+    <!-- TÍTULO DO VOLUME (TOPO) -->
+    
+    <h1>VOLUME III</h1>
 
 
 <h2>DA INSEGURANÇA AO MAGNETISMO PSICOLÓGICO</h2>
@@ -524,8 +570,6 @@ Presença surge da sustentação natural.</p>
 <p>Campo masculino não é exibido.<br>
 É sustentação interna.</p>
 
-
-<a href="volume4.html" class="botao">Prosseguir para o Volume IV</a>
-
-</body>
-</html>
+<a href="volume4.html" class="botao">
+  Prosseguir para o próximo Volume IV
+</a>
