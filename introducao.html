@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -8,88 +8,73 @@
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 860px;
       margin: auto;
-      padding: 40px;
-      line-height: 1.7;
+      padding: 24px 20px; /* 🔧 MENOS RESPIRO */
+      line-height: 1.65;  /* 🔧 MAIS DENSO */
       text-align: center;
     }
 
-    /* TÍTULOS PRINCIPAIS (dourado) */
+    /* TÍTULOS PRINCIPAIS */
     h1, h2.main-title {
       color: #FFD700;
-      text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 24px; /* 🔧 MENOS ESPAÇO */
     }
 
-    /* SUBTÍTULOS DOS VOLUMES (branco) */
+    /* SUBTÍTULOS */
     h3.volume-title {
       color: #fff;
-      margin-top: 30px;
+      margin-top: 24px;
+      margin-bottom: 6px;
     }
 
-    /* TEXTO NORMAL */
+    /* TEXTO */
     p {
-      margin: 15px auto;
-      text-align: center;
-      color: #fff;
+      margin: 10px auto; /* 🔧 TEXTO MAIS JUNTO */
+      max-width: 680px;
     }
 
-    /* IMAGEM CENTRAL */
+    /* IMAGEM (PLACEHOLDER COMPACTO) */
     .imagem-placeholder {
       width: 100%;
-      height: 300px;
+      height: 220px; /* 🔧 MENOR */
       background-color: #111;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #888;
+      color: #777;
       font-style: italic;
-      margin: 30px 0;
+      margin: 20px 0; /* 🔧 MENOS VAZIO */
     }
 
     /* BOTÃO OVAL PREMIUM */
     .botao {
       display: inline-block;
-      margin: 80px auto 20px;
-      padding: 16px 48px;
+      margin: 48px auto 12px; /* 🔧 MUITO MAIS AJUSTADO */
+      padding: 16px 52px;
       background-color: #FFD700;
       color: #000;
       text-decoration: none;
       font-weight: bold;
       border-radius: 999px;
-      font-size: 16px;
-      letter-spacing: 0.5px;
+      font-size: 15px;
+      letter-spacing: 0.6px;
       transition: opacity 0.2s ease;
     }
+
     .botao:hover {
       opacity: 0.9;
     }
-
   </style>
 </head>
 <body>
 
   <h1 class="main-title">Sistema — VMP Vida Magnética Psíquica</h1>
 
-  <style>
-.imagem-placeholder {
-  width: 100%;
-  height: 300px; /* altura visível */
-  background-color: #111; /* tom mais escuro para destacar */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #888;
-  font-style: italic;
-  margin: 30px 0; /* espaço acima e abaixo */
-}
-</style>
-  
-<div class="imagem-placeholder">
-  Espaço para imagem 4:5
-</div>
-  
+  <div class="imagem-placeholder">
+    Espaço para imagem 4:5
+  </div>
+
   <p>Não é sedução.<br>É presença silenciosa.</p>
   <p>Este não é livro de técnicas externas.<br>Nem manual de conquista.</p>
   <p>Aqui só há ajuste interno.<br>Remoção do ruído que fragmenta.</p>
@@ -103,10 +88,12 @@
 
   <h2 class="main-title">MAPA DA JORNADA — VMP</h2>
 
-  <p>Vida Magnética Psíquica</p>
-  <p>O VMP é organizado em 5 Volumes.<br>Eles não ensinam a agir.<br>Eles ajustam o estado que sustenta a ação.</p>
+  <p>
+    O VMP é organizado em 5 Volumes.<br>
+    Eles não ensinam a agir.<br>
+    Eles ajustam o estado que sustenta a ação.
+  </p>
 
-  <!-- SUMÁRIO COM NUMERAIS ROMANOS -->
   <h3 class="volume-title">VOLUME I — SILÊNCIO INTERNO</h3>
   <p>Instalação, refinamento e sustentação da presença.</p>
 
@@ -120,9 +107,13 @@
   <p>Como a presença sustentada é reconhecida externamente.</p>
 
   <h3 class="volume-title">VOLUME V — DOMÍNIO</h3>
-  <p>Integração final.<br>Quando o ajuste deixa de ser esforço.<br>O mapa está à vista.<br>A travessia começa no próximo passo.</p>
+  <p>
+    Integração final.<br>
+    Quando o ajuste deixa de ser esforço.<br>
+    O mapa está à vista.<br>
+    A travessia começa no próximo passo.
+  </p>
 
-  <!-- BOTÃO OVAL NO FINAL -->
   <a href="volume1.html" class="botao">PARABÉNS. ENTRE NO VMP</a>
 
 </body>
