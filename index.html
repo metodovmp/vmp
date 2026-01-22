@@ -16,46 +16,50 @@
       margin: 0;
     }
 
-    .aceito {
+    .linha-iniciar {
       color: #fff;
       font-size: 14px;
       letter-spacing: 2px;
-      margin-bottom: 20px;
+      margin-bottom: 6px;
     }
 
-    h1 {
-      font-size: 42px;
+    .linha-confirmada {
+      color: #FFD700;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
       margin-bottom: 40px;
-      line-height: 1.2;
     }
 
-    /* BOTÃO OVAL PREMIUM */
+    /* BOTÃO OVAL PRETO */
     .botao {
       display: inline-block;
       margin: 0 auto;
       padding: 16px 48px;
-      background-color: #FFD700;
-      color: #000;
+      background-color: #000;
+      color: #FFD700;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 999px; /* oval total */
-      font-size: 16px;
+      border-radius: 999px;
+      font-size: 15px;
       letter-spacing: 0.5px;
+      border: 1px solid #FFD700;
       transition: opacity 0.2s ease;
     }
 
     .botao:hover {
-      opacity: 0.9;
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
 
-  <div class="aceito">VOCÊ FOI ACEITO</div>
+  <div class="linha-iniciar">Iniciar</div>
+  <div class="linha-confirmada">ENTRADA CONFIRMADA</div>
 
-<h1>PARABÉNS<br>ENTRE NO VMP</h1>
-
-<a href="introducao.html" class="botao">PARABÉNS<br>ENTRE NO VMP</a>
+  <a href="introducao.html" class="botao">
+    Sua entrada foi confirmada
+  </a>
 
 </body>
 </html>
