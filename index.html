@@ -5,19 +5,22 @@
   <title>ENTRE NO VMP</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #000;
       color: #FFD700;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0 16px;
+      padding: 0;
 
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center; /* base estável */
+      justify-content: center;
       align-items: center;
-
       text-align: center;
     }
 
@@ -25,40 +28,41 @@
       color: #fff;
       font-size: 15px;
       letter-spacing: 2px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .linha-confirmada {
       color: #FFD700;
-      font-size: 34px;
-      font-weight: bold;
+      font-size: 36px;
+      font-weight: 700;
       letter-spacing: 1px;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
 
     .botao {
-      display: inline-block;
-      padding: 16px 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 280px;      /* 🔒 trava tamanho */
+      min-height: 56px;      /* 🔒 trava altura */
+
+      padding: 0 24px;       /* não interfere mais */
       background-color: #000;
       color: #FFD700;
+
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
+      font-weight: 700;
       font-size: 16px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.6px;
+
+      border-radius: 999px;
       border: 1px solid #FFD700;
       transition: opacity 0.2s ease;
     }
 
     .botao:hover {
       opacity: 0.85;
-    }
-
-    /* Ajuste FINO só no mobile */
-    @media (max-width: 480px) {
-      body {
-        padding-top: 8vh; /* sobe levemente sem quebrar */
-      }
     }
   </style>
 </head>
@@ -67,9 +71,7 @@
 
   <div class="linha-iniciar">Iniciar</div>
 
-  <div class="linha-confirmada">
-    ENTRADA CONFIRMADA
-  </div>
+  <div class="linha-confirmada">ENTRADA CONFIRMADA</div>
 
   <a href="introducao.html" class="botao">
     Sua entrada foi confirmada
