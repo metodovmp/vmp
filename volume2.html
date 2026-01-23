@@ -11,79 +11,89 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.75;
+      line-height: 1.55;
     }
 
-    /* CONTEÚDO CENTRAL ÚNICO */
     .vmp-content {
       max-width: 640px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 36px 18px;
       text-align: center;
     }
 
-    /* TÍTULOS PRINCIPAIS */
-    h1, h2 {
-      color: #FFD700; /* dourado */
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+    /* Título do Sistema */
+    h1 {
+      color: #FFD700;
+      font-size: 38px;
+      letter-spacing: 2.5px;
+      margin: 0 0 4px;
+      font-weight: 700;
     }
 
-    h1 { 
-      margin-bottom: 20px; 
-      letter-spacing: 2px;
-      font-size: 36px;
-    }
-
-    h2 { 
-      margin-bottom: 40px; 
+    h2 {
+      color: #FFD700;
       font-size: 22px;
-      font-weight: normal;
-      letter-spacing: 1px;
+      letter-spacing: 1.4px;
+      margin: 0 0 40px;
+      font-weight: 500;
     }
 
-    /* SUBTÍTULOS */
-    h3, h4 {
-      color: #fff;
-      text-align: center;
-      margin-top: 36px;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 1.65;
+    /* Título de Capítulo */
+    h3 {
+      color: #FFD700;      /* dourado */
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin: 64px 0 22px;
     }
 
-    /* TEXTO */
+    /* Subtítulos internos (REALINHAMENTO, INSTALAÇÃO etc) */
+    h4.subtitulo {
+      color: #ffffff !important;  /* branco para todos os capítulos */
+      font-size: 18px;             /* tamanho igual em todos os capítulos */
+      font-weight: 800;            /* mesma grossura para todos */
+      letter-spacing: 1.2px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    /* Texto */
     p {
-      text-align: center;
-      margin: 20px auto;
+      margin: 14px auto;
       font-size: 18px;
-      line-height: 1.65;
+      line-height: 1.45;
       letter-spacing: 0.1px;
       color: #eaeaea;
     }
 
-    /* IMAGENS / PLACEHOLDER */
-    img,
-    .imagem-placeholder {
+    /* Imagens do capítulo */
+    img {
       display: block;
-      margin: 40px auto;
+      margin: 30px auto 40px;
       max-width: 100%;
+      border-radius: 6px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
     }
 
-    /* BOTÃO OVAL PREMIUM */
+    /* Espaço entre capítulos */
+    .fim-capitulo {
+      margin-bottom: 72px;
+    }
+
+    /* Botão */
     .botao {
       display: inline-block;
-      margin: 60px auto 20px;
-      padding: 18px 56px;
+      margin: 70px auto 20px;
+      padding: 18px 52px;
       background-color: #FFD700;
       color: #000;
       text-decoration: none;
       font-weight: bold;
       border-radius: 999px;
-      font-size: 18px;
+      font-size: 17px;
       letter-spacing: 0.5px;
-      transition: opacity 0.2s ease;
     }
 
     .botao:hover {
@@ -91,560 +101,32 @@
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 12px 8px;
-      }
-
-      .botao {
-        padding: 16px 40px;
-        font-size: 16px;
-      }
-
-      h1 {
-        font-size: 32px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
-
-      p, h3, h4 {
-        font-size: 16px;
-      }
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 22px; }
+      h4.subtitulo { font-size: 17px; }
+      p  { font-size: 16px; }
     }
   </style>
 </head>
 
 <body>
-
   <div class="vmp-content">
 
-    <!-- CABEÇALHO DO SISTEMA -->
+<!-- CABEÇALHO DO SISTEMA -->
     <h1>SISTEMA II</h1>
 <h2>AUTORIDADE</h2>
 
-    <!-- 👉 AQUI ENTRAM OS 10 CAPÍTULOS DO SISTEMA II-->
-
-
-    
-<!-- CAPÍTULO 11 -->
-
-<h2>CONFIANÇA QUE IMPÕE RESPEITO SEM FORÇAR</h2>
-
-<p>FIRMEZA QUE ESTABELECE LIMITE</p>
-
-<!-- ESTILO DA IMAGEM VMP (somente para o primeiro capítulo do sistema; mantém consistência) -->
-<style>
-.imagem-vmp {
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  display: block;
-  margin: 20px auto 26px;
-  border-radius: 6px;
-}
-</style>
-
-<!-- IMAGEM DO CAPÍTULO 11 -->
-<img 
-  src="img/file_placeholder_cap11.png"
-  alt="Confiança masculina e respeito"
-  class="imagem-vmp">
-
-<p>Respeito obtido pela pressão não sustenta.<br>
-Sorrisos surgem, mas o olhar não permanece.<br>
-Medo cria recuo, não honra.<br>
-Quanto mais força, mais distância se forma.<br>
-Pedir respeito já denuncia fragilidade.<br>
-Você nota que o ambiente tolera, não reconhece.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>A confiança artificial nasce do desalinhamento interno.<br>
-Sem base, o estado vira encenação.<br>
-Buscar validação corrói integridade.<br>
-Impor limites sem eixo fragmenta coerência.<br>
-Quando o centro se fixa, o respeito emerge.<br>
-O interno define a hierarquia.<br>
-A confiança passa a pesar.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Fique estável por dentro.<br>
-Não vacile.<br>
-Não busque validação.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Chegada em grupo, conversa solta.<br>
-Você fala pouco.<br>
-Quando fala, escutam.<br>
-Ninguém interrompe.<br>
-O clima se ajusta.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Respeito não se exige.<br>
-Reconhece firmeza.</p>
-
-
-    <!-- CAPÍTULO 12 -->
-
-<h2>O OLHAR QUE CRIA TENSÃO E DESEJO</h2>
-
-<p>CONTATO SUSTENTADO QUE INQUIETA</p>
-
-<!-- IMAGEM DO CAPÍTULO 12 -->
-<img 
-  src="img/file_placeholder_cap12.png"
-  alt="Olhar masculino que cria tensão"
-  class="imagem-vmp">
-
-<p>O olhar que desvia rápido não sustenta nada.<br>
-A conexão se desfaz antes de se formar.<br>
-Forçar contato cria recuo imediato.<br>
-A proximidade perde densidade.<br>
-O ambiente esfria mesmo sem afastamento.<br>
-Você nota que falta sustentação no olhar.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>O olhar instável nasce da falta de ancoragem.<br>
-Sem centro, ele vacila.<br>
-Forçar presença dilui silêncio.<br>
-Cada desvio reduz peso.<br>
-Quando a ancoragem se fixa, o olhar ganha densidade.<br>
-O centro sustenta a tensão.<br>
-O desejo permanece.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Relaxe o rosto.<br>
-Sustente o olhar sem intenção.<br>
-Não avance nem recue.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Sala comum, pessoas circulando.<br>
-Você cruza o olhar sem pressa.<br>
-O contato dura um segundo a mais.<br>
-Ela desvia primeiro.<br>
-Algo fica no ar.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Olhar não busca.<br>
-Sustenta.</p>
-
-
-    <!-- CAPÍTULO 13 -->
-
-<h2>LINGUAGEM CORPORAL DE ALTO VALOR</h2>
-
-<p>CORPO ALINHADO TRANSMITE VALOR</p>
-
-<!-- IMAGEM DO CAPÍTULO 13 -->
-<img 
-  src="img/file_placeholder_cap13.png"
-  alt="Linguagem corporal masculina de alto valor"
-  class="imagem-vmp">
-
-<p>Alguns corpos comunicam valor sem esforço.<br>
-Movimentos mínimos dizem mais que palavras.<br>
-O excesso sempre denuncia insegurança.<br>
-Ajustes constantes quebram a imagem.<br>
-Nada se fixa quando há tentativa demais.<br>
-Você observa o corpo tentando convencer.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>A linguagem corporal fraca nasce do desalinhamento interno.<br>
-Sem eixo, o corpo compensa.<br>
-Gestos externos sem base derrubam consistência.<br>
-Cada ajuste forçado reduz peso.<br>
-Quando o eixo se assenta, o corpo reflete sozinho.<br>
-O interno guia o movimento.<br>
-O valor se manifesta sem intenção.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Reduza o movimento.<br>
-Sinta o corpo inteiro.<br>
-Não acrescente gesto algum.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Ambiente em movimento constante.<br>
-Você anda mais devagar.<br>
-Gestos são econômicos.<br>
-As pessoas acompanham com os olhos.<br>
-Nada chama atenção, mas chama.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Linguagem corporal não se constrói.<br>
-Ela revela alinhamento.</p>
+    <!-- ================== CAPÍTULOS ================== -->
 
 
 
-    <!-- CAPÍTULO 14 -->
 
-<h2>PSICOLOGIA OCULTA DA PRESENÇA PSÍQUICA</h2>
 
-<p>ESTADO QUE DESPERTA DESEJO INVISÍVEL</p>
-
-<!-- IMAGEM DO CAPÍTULO 14 -->
-<img 
-  src="img/file_placeholder_cap14.png"
-  alt="Psicologia oculta da presença psíquica"
-  class="imagem-vmp">
-
-<p>Palavras comuns não alcançam o núcleo.<br>
-Técnicas convencionais deixam vazio.<br>
-O desejo surge sem lógica aparente.<br>
-Algo invisível toca sem aviso.<br>
-O externo jamais basta sozinho.<br>
-Você sente que falta o impulso silencioso.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>A presença rasa nasce do desalinhamento interno.<br>
-Sem profundidade, o estado não sustenta.<br>
-Buscar reação externa corrói integridade.<br>
-Cada tentativa consciente fragmenta densidade.<br>
-Quando o espaço interno se abre, algo se organiza.<br>
-O centro conecta antes do gesto.<br>
-A presença psíquica emerge como consequência.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Interrompa o excesso mental.<br>
-Fique no corpo.<br>
-Não se fragmente.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Interação próxima, distância curta.<br>
-Você não tenta conduzir.<br>
-O outro se inclina sem perceber.<br>
-O silêncio se alonga.<br>
-A tensão cresce.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Presença psíquica não age.<br>
-Ela ocupa.</p>
 
 
     
-    <!-- CAPÍTULO 15 -->
 
-<h2>O SILÊNCIO QUE GERA AUTORIDADE</h2>
-
-<p>PAUSA INTERNA QUE TRANSMITE PESO</p>
-
-<!-- IMAGEM DO CAPÍTULO 15 -->
-<img 
-  src="img/file_placeholder_cap15.png"
-  alt="O silêncio que gera autoridade"
-  class="imagem-vmp">
-
-<p>O silêncio incomoda em meio ao ruído constante.<br>
-Palavras demais diluem qualquer impacto.<br>
-Tentar preencher o vazio cria mais desgaste.<br>
-As pessoas aguardam algo que não vem.<br>
-No meio disso, você observa a pausa ganhar tensão.<br>
-O barulho começa a perder força.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>O silêncio fraco nasce da falta de quietude interna.<br>
-Sem sustentação, vira desconforto.<br>
-Preencher com palavras dissolve densidade.<br>
-Cada quebra reduz ancoragem.<br>
-Quando a quietude se firma, o silêncio se organiza.<br>
-O interno sustenta a pausa.<br>
-A autoridade emerge sem anúncio.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Não responda de imediato.<br>
-Sinta o peso interno.<br>
-Deixe o silêncio agir.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Conversa em andamento.<br>
-Você escuta sem reagir.<br>
-O grupo espera sua resposta.<br>
-O tempo estica.<br>
-Você decide quando falar.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Silêncio não preenche.<br>
-Ele sustenta.</p>
-
-
-<!-- CAPÍTULO 16 -->
-
-<h2>FALE MENOS. SEJA MAIS OUVIDO</h2>
-
-<p>PALAVRA RARA QUE GANHA DENSIDADE</p>
-
-<!-- IMAGEM DO CAPÍTULO 16 -->
-<img 
-  src="img/file_placeholder_cap16.png"
-  alt="Fale menos, seja mais ouvido"
-  class="imagem-vmp">
-
-<p>Palavras demais passam sem registro.<br>
-O ambiente se acostuma ao ruído constante.<br>
-Explicações longas perdem força rápido.<br>
-O excesso dilui qualquer impacto.<br>
-No meio disso, você nota o som perder peso.<br>
-O silêncio começa a faltar.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>O excesso verbal nasce da falta de silêncio interno.<br>
-Sem quietude, o estado se espalha.<br>
-Preencher o espaço reduz densidade.<br>
-Cada frase extra enfraquece sustentação.<br>
-Quando o silêncio é escolhido, a palavra se organiza.<br>
-O interno carrega o som.<br>
-O que é dito pesa.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Espere antes de falar.<br>
-Sinta o centro firme.<br>
-Diga menos do que pode.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Discussão leve, várias opiniões.<br>
-Você observa antes de entrar.<br>
-Quando fala, o ritmo muda.<br>
-Ninguém responde de imediato.<br>
-O silêncio trabalha.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Quem fala menos sustenta mais.<br>
-O som permanece.</p>
-
-
-
-    <!-- CAPÍTULO 17 -->
-
-<h2>PEQUENAS ATITUDES. GRANDES REAÇÕES</h2>
-
-<p>AJUSTES SUTIS QUE ALTERAM O OUTRO</p>
-
-<!-- IMAGEM DO CAPÍTULO 17 -->
-<img 
-  src="img/file_placeholder_cap17.png"
-  alt="Pequenas atitudes, grandes reações"
-  class="imagem-vmp">
-
-<p>Gestos grandes chamam atenção, mas não sustentam.<br>
-O exagero cria resposta rápida e rasa.<br>
-Tentar impressionar cansa o ambiente.<br>
-O óbvio perde impacto com facilidade.<br>
-No meio disso, você percebe o peso do mínimo.<br>
-O sutil começa a reagir no outro.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>O excesso nasce da falta de coerência interna.<br>
-Sem base, o gesto vira compensação.<br>
-Buscar reação externa reduz integridade.<br>
-Cada ampliação enfraquece peso interno.<br>
-Quando há alinhamento, o mínimo basta.<br>
-O interno sustenta a sutileza.<br>
-A reação surge sem anúncio.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Faça menos.<br>
-Sustente mais.<br>
-Não disperse energia.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Interação simples, nada planejado.<br>
-Você muda um detalhe mínimo.<br>
-O outro reage mais do que esperado.<br>
-O ambiente percebe.<br>
-Você não comenta.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Pequeno não é fraco.<br>
-É o que permanece.</p>
-
-
-
-    
-    <!-- CAPÍTULO 18 -->
-
-<h2>O GATILHO INVISÍVEL DO DOMÍNIO SILENCIOSO</h2>
-
-<p>MECANISMO QUE REORGANIZA</p>
-
-<!-- IMAGEM DO CAPÍTULO 18 -->
-<img 
-  src="img/file_placeholder_cap18.png"
-  alt="Gatilho invisível do domínio silencioso"
-  class="imagem-vmp">
-
-<p>O domínio costuma ser associado a ações visíveis.<br>
-Tentativas diretas criam resistência imediata.<br>
-O ambiente reage antes de aceitar comando.<br>
-O que chega anunciado encontra oposição.<br>
-Algo começa a se reorganizar sem aviso.<br>
-Você nota tarde demais.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>O domínio forçado nasce da ausência de quietude.<br>
-Sem espaço interno, o estado se torna ruidoso.<br>
-Buscar controle externo enfraquece ancoragem.<br>
-Cada sinal visível dispersa densidade.<br>
-Quando a quietude se firma, algo se ativa.<br>
-O centro passa a sustentar o ambiente.<br>
-A reorganização acontece sem anúncio.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Não anuncie intenção.<br>
-Mantenha o estado fechado.<br>
-Espere o ambiente reagir.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Ambiente cheio, estímulos demais.<br>
-Você permanece parado.<br>
-Alguém ajusta o próprio comportamento.<br>
-Outros seguem.<br>
-Nada foi pedido.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Domínio não se mostra.<br>
-Ele reorganiza.</p>
-
-
-
-    <!-- CAPÍTULO 19 -->
-
-<h2>COMANDE AMBIENTES SEM PRECISAR FALAR</h2>
-
-<p>PRESENÇA QUE GUIA SEM BARULHO</p>
-
-<!-- IMAGEM DO CAPÍTULO 19 -->
-<img 
-  src="img/file_placeholder_cap19.png"
-  alt="Comande ambientes sem precisar falar"
-  class="imagem-vmp">
-
-<p>Ambientes se alteram sem que alguém precise falar.<br>
-O excesso de palavras cria atrito invisível.<br>
-Tentativas de liderar pelo som geram resistência.<br>
-Gestos grandes não fixam direção.<br>
-Algo começa a se organizar em silêncio.<br>
-Você observa o espaço responder antes de qualquer comando.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>O comando falado nasce do desalinhamento interno.<br>
-Sem centro firme, o estado busca apoio no externo.<br>
-Falar para conduzir dispersa densidade.<br>
-Cada ajuste visível enfraquece sustentação.<br>
-Quando o centro se fixa, o ambiente se orienta.<br>
-O interno passa a guiar sem sinal.<br>
-A direção surge sem precisar ser dita.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Entre sem pressa.<br>
-Sinta o ritmo do lugar.<br>
-Não se ajuste a ele.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Sala com energia dispersa.<br>
-Você entra e se posiciona.<br>
-As conversas diminuem.<br>
-As decisões se alinham.<br>
-Você observa.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>Comando não precisa de voz.<br>
-Ele se sustenta no centro.</p>
-
-
-
-    <!-- CAPÍTULO 20 -->
-
-<h2>O CORPO QUE LIDERA ANTES DA VOZ</h2>
-
-<p>EXPRESSÃO QUE TRANSMITE DIREÇÃO</p>
-
-<!-- IMAGEM DO CAPÍTULO 20 -->
-<img 
-  src="img/file_placeholder_cap20.png"
-  alt="O corpo que lidera antes da voz"
-  class="imagem-vmp">
-
-<p>A voz tenta assumir, mas algo já se move antes.<br>
-Pequenos ajustes corporais anunciam direção.<br>
-Palavras chegam tarde quando o corpo hesita.<br>
-O ritmo se perde quando tudo espera ser dito.<br>
-Você sente que a liderança começa no físico.<br>
-O som apenas confirma o que já estava claro.</p>
-
-<h3>REALINHAMENTO:</h3>
-
-<p>A liderança falada nasce do desalinhamento corporal.<br>
-Sem eixo, o corpo espera a mente.<br>
-Esse atraso dissolve consistência.<br>
-Falar antes de mover reduz peso.<br>
-Quando o corpo se alinha ao centro, a direção emerge.<br>
-O físico sustenta primeiro.<br>
-A presença conduz.</p>
-
-<h3>INSTALAÇÃO:</h3>
-
-<p>Sinta o corpo firme.<br>
-Deixe a postura falar.<br>
-Não antecipe palavras.<br>
-Permaneça.</p>
-
-<h3>REFINAMENTO:</h3>
-
-<p>Grupo em deslocamento.<br>
-Você define o ritmo sem falar.<br>
-Os outros acompanham.<br>
-O caminho fica claro.<br>
-A voz ainda não foi usada.</p>
-
-<h3>SUSTENTAÇÃO:</h3>
-
-<p>O corpo lidera primeiro.<br>
-A voz só confirma.</p>
     
 
 
