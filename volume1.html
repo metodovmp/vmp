@@ -26,7 +26,7 @@
       color: #FFD700;
       font-size: 38px;
       letter-spacing: 2.5px;
-      margin: 0 0 6px;
+      margin: 0 0 4px;
       font-weight: 700;
     }
 
@@ -34,60 +34,49 @@
       color: #FFD700;
       font-size: 22px;
       letter-spacing: 1.4px;
-      margin: 0 0 36px;
+      margin: 0 0 40px;
       font-weight: 500;
     }
 
     /* TÍTULO DE CAPÍTULO */
     h3 {
       color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 22px;              /* ↑ maior */
+      font-weight: 700;             /* ↑ peso real */
       letter-spacing: 1.2px;
-      margin: 70px 0 16px;
+      margin: 64px 0 22px;          /* ↑ respiro acima */
     }
 
-    /* SUBTÍTULO DO CAPÍTULO */
-    .subcapitulo {
-      color: #bdbdbd;
-      font-size: 17px;
-      letter-spacing: 1px;
-      margin-bottom: 32px;
-    }
-
-    /* SEÇÕES INTERNAS: REALINHAMENTO, INSTALAÇÃO, ETC */
+    /* SUBTÍTULOS INTERNOS (REALINHAMENTO etc) */
     h4 {
-      color: #FFD700;
-      font-size: 18px;
-      font-weight: 800;
+      color: #FFD700;               /* ↑ contraste */
+      font-size: 18px;              /* ↑ tamanho */
+      font-weight: 800;             /* ↑ bem mais grosso */
       letter-spacing: 1.6px;
-      margin-top: 44px;
-      margin-bottom: 18px;
+      margin: 40px 0 18px;
       text-transform: uppercase;
     }
 
     /* TEXTO */
     p {
-      margin: 0 auto 18px;
+      margin: 14px auto;
       font-size: 18px;
       line-height: 1.45;
       letter-spacing: 0.1px;
       color: #eaeaea;
     }
 
-    /* IMAGEM */
+    /* ENCERRAMENTO DE CAPÍTULO (RESPIRO REAL) */
+    .fim-capitulo {
+      margin-bottom: 72px;          /* ← ISSO resolve o colado */
+    }
+
     img {
       display: block;
-      margin: 22px auto 34px;
+      margin: 30px auto 40px;
       max-width: 100%;
     }
 
-    /* ESPAÇO ENTRE CAPÍTULOS */
-    .fim-capitulo {
-      margin-bottom: 90px;
-    }
-
-    /* BOTÃO */
     .botao {
       display: inline-block;
       margin: 70px auto 20px;
@@ -101,10 +90,14 @@
       letter-spacing: 0.5px;
     }
 
+    .botao:hover {
+      opacity: 0.9;
+    }
+
     @media (max-width: 600px) {
       h1 { font-size: 32px; }
       h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
+      h3 { font-size: 20px; }
       h4 { font-size: 17px; }
       p  { font-size: 16px; }
     }
@@ -117,6 +110,7 @@
 
     <h1>SISTEMA I</h1>
     <h2>SILÊNCIO INTERNO</h2>
+
 
     <!-- ===== CAPÍTULOS ENTRAM AQUI ===== -->
 
@@ -240,9 +234,9 @@ Algo se desloca.</p>
 
 <p>Invisibilidade não é falta de presença.<br>
 É falta de sustentação.</p>
-
+  
+<div class="fim-capitulo"></div>
     
-
     <h2>O REFLEXO QUE MENTE SOBRE QUEM VOCÊ É</h2>
 
 <p>A IMAGEM EXTERNA QUE DISTORCE</p>
