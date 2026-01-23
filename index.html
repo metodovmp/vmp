@@ -9,42 +9,44 @@
       background-color: #000;
       color: #FFD700;
       font-family: Arial, sans-serif;
-      text-align: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       margin: 0;
       padding: 0 16px;
+
+      min-height: 100svh; /* 🔑 corrige mobile */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-top: 42vh; /* 🔑 eixo visual correto */
+      transform: translateY(-50%);
+      text-align: center;
     }
 
     .linha-iniciar {
       color: #fff;
-      font-size: 16px; /* ↑ antes 14 */
+      font-size: 15px;
       letter-spacing: 2px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     .linha-confirmada {
       color: #FFD700;
-      font-size: 36px; /* ↑ antes 32 */
+      font-size: 34px;
       font-weight: bold;
       letter-spacing: 1px;
-      margin-bottom: 28px; /* ↓ aproxima do botão */
+      margin-bottom: 22px;
     }
 
-    /* BOTÃO OVAL */
     .botao {
       display: inline-block;
-      margin: 0 auto;
-      padding: 18px 56px; /* ↑ mais confortável no mobile */
+      padding: 16px 52px;
       background-color: #000;
       color: #FFD700;
       text-decoration: none;
       font-weight: bold;
       border-radius: 999px;
-      font-size: 17px; /* ↑ antes 15 */
-      letter-spacing: 0.6px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
       border: 1px solid #FFD700;
       transition: opacity 0.2s ease;
     }
