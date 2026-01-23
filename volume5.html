@@ -14,7 +14,7 @@
       line-height: 1.8;
     }
 
-    /* CONTEÚDO CENTRAL ÚNICO */
+    /* CONTEÚDO CENTRAL */
     .vmp-content {
       max-width: 640px;
       margin: 0 auto;
@@ -24,23 +24,35 @@
 
     /* TÍTULOS PRINCIPAIS */
     h1, h2 {
-      color: #FFD700; /* dourado */
       text-align: center;
       margin-left: auto;
       margin-right: auto;
     }
 
     h1 { 
-      margin-bottom: 32px; 
+      color: #FFD700; /* dourado */
       font-size: 36px;
       letter-spacing: 2px;
+      font-weight: bold;
+      margin-bottom: 32px;
     }
 
     h2 { 
-      margin-top: 24px; 
+      color: #FFD700; /* dourado */
+      font-size: 28px;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      margin-top: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* SUBTÍTULOS */
+    .subtitle {
+      color: #fff; /* branco */
       font-size: 22px;
-      font-weight: normal;
+      font-weight: bold;
       letter-spacing: 1px;
+      margin-bottom: 22px;
     }
 
     /* TEXTO */
@@ -53,7 +65,18 @@
       letter-spacing: 0.2px;
     }
 
-    /* ESPAÇAMENTO FINAL (silêncio visual) */
+    /* IMAGEM CAPÍTULO */
+    .imagem-vmp {
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+      margin: 22px auto 34px;
+      border-radius: 6px;
+    }
+
+    /* ESPAÇAMENTO FINAL */
     .encerramento {
       margin-top: 80px;
       margin-bottom: 40px;
@@ -62,7 +85,6 @@
 </head>
 
 <body>
-
   <div class="vmp-content">
 
     <!-- IDENTIDADE DO SISTEMA -->
