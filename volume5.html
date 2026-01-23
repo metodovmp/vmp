@@ -11,82 +11,88 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.8;
+      line-height: 1.55;
     }
 
-    /* CONTEÚDO CENTRAL */
     .vmp-content {
       max-width: 640px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 36px 18px;
       text-align: center;
     }
 
-    /* TÍTULOS PRINCIPAIS (h1 e h2) */
-    h1, h2 {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    h1 { 
+    /* Título do Sistema */
+    h1 {
       color: #FFD700; /* dourado */
-      font-size: 36px;
-      letter-spacing: 2px;
-      font-weight: bold;
-      margin-bottom: 32px;
+      font-size: 38px;
+      letter-spacing: 2.5px;
+      margin: 0 0 4px;
+      font-weight: 700;
     }
 
-    h2 { 
+    h2 {
       color: #FFD700; /* dourado */
-      font-size: 32px;
-      letter-spacing: 1.5px;
-      font-weight: bold;
-      margin-top: 32px;
-      margin-bottom: 20px;
+      font-size: 22px;
+      letter-spacing: 1.4px;
+      margin: 0 0 40px;
+      font-weight: 700;
     }
 
-    /* SUBTÍTULOS */
-    .subtitle {
-      color: #fff; /* branco */
-      font-size: 26px;
-      font-weight: bold; /* mais grosso */
-      letter-spacing: 1px;
-      margin-bottom: 28px;
+    /* Título de Capítulo */
+    h3 {
+      color: #FFD700; /* dourado */
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin: 64px 0 22px;
     }
 
-    /* TEXTO */
-    p {
-      text-align: center;
-      margin: 22px auto;
-      color: #fff;
+    /* Subtítulos internos (REALINHAMENTO, INSTALAÇÃO, REFINAMENTO, SUSTENTAÇÃO) */
+    h4.subtitulo {
+      color: #ffffff !important;  /* branco */
       font-size: 18px;
-      line-height: 1.65;
-      letter-spacing: 0.2px;
+      font-weight: 800;            /* grosso */
+      letter-spacing: 1.2px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
     }
 
-    /* IMAGEM CAPÍTULO */
-    .imagem-vmp {
-      width: 100%;
-      max-width: 420px;
+    /* Texto */
+    p {
+      margin: 14px auto;
+      font-size: 18px;
+      line-height: 1.45;
+      letter-spacing: 0.1px;
+      color: #eaeaea;
+      text-align: center;
+    }
+
+    /* Imagens do capítulo */
+    img.imagem-vmp {
+      display: block;
+      margin: 30px auto 40px;
+      max-width: 100%;
+      border-radius: 6px;
       aspect-ratio: 4 / 5;
       object-fit: cover;
-      display: block;
-      margin: 22px auto 34px;
-      border-radius: 6px;
     }
 
-    /* ESPAÇAMENTO FINAL */
+    /* Espaço entre capítulos */
+    .fim-capitulo {
+      margin-bottom: 72px;
+    }
+
+    /* Encerramento final do Volume V */
     .encerramento {
       margin-top: 80px;
       margin-bottom: 40px;
     }
 
-    /* FECHAMENTO FINAL */
     .encerramento h1 {
-      color: #FFD700;
+      color: #FFD700; /* dourado */
       font-size: 36px;
-      font-weight: bold;
+      font-weight: 700;
       letter-spacing: 2px;
       margin-bottom: 24px;
     }
@@ -94,6 +100,14 @@
     .encerramento p {
       font-size: 18px;
       color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 22px; }
+      h4.subtitulo { font-size: 17px; }
+      p  { font-size: 16px; }
     }
   </style>
 </head>
