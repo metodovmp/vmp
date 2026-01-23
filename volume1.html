@@ -11,51 +11,61 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.5; /* ↓ mais denso, igual Introdução */
     }
 
     .vmp-content {
-      max-width: 620px;
+      max-width: 640px;
       margin: 0 auto;
-      padding: 36px 18px 56px;
+      padding: 36px 20px 60px;
       text-align: center;
     }
 
-    /* TÍTULOS */
-    h1 {
+    /* TÍTULOS PRINCIPAIS */
+    h1, h2 {
       color: #FFD700;
-      font-size: 32px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 { 
+      margin-bottom: 6px;      /* ↓ aproxima */
       letter-spacing: 2px;
-      margin: 0 0 10px;
-      font-weight: bold;
+      font-size: 36px;
     }
 
-    h2 {
-      color: #FFD700;
-      font-size: 20px;
-      letter-spacing: 1px;
-      margin: 0 0 34px;
+    h2 { 
+      margin-bottom: 28px;     /* ↓ menos espaço */
+      font-size: 22px;
       font-weight: normal;
+      letter-spacing: 1px;
     }
 
-    h3 {
+    /* SUBTÍTULOS (REALINHAMENTO ETC) */
+    h3, h4 {
       color: #fff;
-      font-size: 16px;
+      text-align: center;
+      margin-top: 34px;
+      margin-bottom: 10px;
+      font-size: 19px;         /* ↑ mais visível */
+      font-weight: bold;      /* ← CRÍTICO */
       letter-spacing: 1px;
-      margin: 46px 0 14px; /* 🔴 separa capítulos */
-      font-weight: normal;
     }
 
     /* TEXTO */
     p {
-      margin: 12px auto;
-      font-size: 16.5px;
-      line-height: 1.55; /* 🔴 leitura limpa */
+      text-align: center;
+      margin: 10px auto;       /* ↓ menos espaço */
+      font-size: 18px;
+      line-height: 1.45;
       letter-spacing: 0.15px;
-      color: #e6e6e6;
+      color: #eaeaea;
     }
 
     /* IMAGEM */
-    img {
+    img,
+    .imagem-placeholder {
       display: block;
       margin: 26px auto 34px;
       max-width: 100%;
@@ -63,19 +73,17 @@
 
     /* BOTÃO */
     .botao {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: 64px auto 0;
-      padding: 18px 60px;
-      min-width: 300px;
+      display: inline-block;
+      margin: 60px auto 20px;
+      padding: 18px 56px;
       background-color: #FFD700;
       color: #000;
       text-decoration: none;
       font-weight: bold;
       border-radius: 999px;
-      font-size: 16px;
+      font-size: 18px;
       letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
     }
 
     .botao:hover {
@@ -83,9 +91,21 @@
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 28px; }
-      h2 { font-size: 18px; }
-      p  { font-size: 15.8px; }
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+
+      p {
+        font-size: 16px;
+      }
+
+      h3, h4 {
+        font-size: 17px;
+      }
+
+      .botao {
+        padding: 16px 44px;
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -97,7 +117,7 @@
     <h1>SISTEMA I</h1>
     <h2>SILÊNCIO INTERNO</h2>
 
-    <!-- SEU CONTEÚDO AQUI -->
+    <!-- CONTEÚDO DOS CAPÍTULOS -->
 
 
     <h2>O SILÊNCIO QUE ACORDA A PRESENÇA</h2>
@@ -602,7 +622,9 @@ Princípio permanece.</p>
     
     
     <!-- AÇÃO -->
-<a href="volume2.html" class="botao">Avançar</a>
+<a href="volume2.html" class="botao">
+      Avançar
+    </a>
 
   </div>
 
