@@ -12,13 +12,12 @@
       margin: 0;
       padding: 0 16px;
 
-      min-height: 100svh; /* 🔑 corrige mobile */
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: center; /* base estável */
       align-items: center;
 
-      padding-top: 42vh; /* 🔑 eixo visual correto */
-      transform: translateY(-50%);
       text-align: center;
     }
 
@@ -26,7 +25,7 @@
       color: #fff;
       font-size: 15px;
       letter-spacing: 2px;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .linha-confirmada {
@@ -34,7 +33,7 @@
       font-size: 34px;
       font-weight: bold;
       letter-spacing: 1px;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
     .botao {
@@ -53,6 +52,13 @@
 
     .botao:hover {
       opacity: 0.85;
+    }
+
+    /* Ajuste FINO só no mobile */
+    @media (max-width: 480px) {
+      body {
+        padding-top: 8vh; /* sobe levemente sem quebrar */
+      }
     }
   </style>
 </head>
