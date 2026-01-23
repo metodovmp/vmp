@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      line-height: 1.55;
     }
 
     .vmp-content {
@@ -24,57 +24,62 @@
     /* TÍTULO DO SISTEMA */
     h1 {
       color: #FFD700;
-      font-size: 36px;
-      letter-spacing: 2px;
-      margin: 0 0 6px;
-      font-weight: bold;
+      font-size: 38px;
+      letter-spacing: 2.5px;
+      margin: 0 0 4px;
+      font-weight: 700;
     }
 
     h2 {
       color: #FFD700;
       font-size: 22px;
-      letter-spacing: 1px;
-      margin: 0 0 32px;
-      font-weight: normal;
+      letter-spacing: 1.4px;
+      margin: 0 0 40px;
+      font-weight: 500;
     }
 
     /* TÍTULO DE CAPÍTULO */
     h3 {
-      color: #fff;
-      font-size: 20px;
-      font-weight: 600;              /* ← MAIS GROSSO */
-      letter-spacing: 1px;
-      margin: 48px 0 18px;           /* ← respiro claro */
+      color: #ffffff;
+      font-size: 22px;              /* ↑ maior */
+      font-weight: 700;             /* ↑ peso real */
+      letter-spacing: 1.2px;
+      margin: 64px 0 22px;          /* ↑ respiro acima */
     }
 
-    /* SUBTÍTULOS INTERNOS (REALINHAMENTO, ETC) */
+    /* SUBTÍTULOS INTERNOS (REALINHAMENTO etc) */
     h4 {
-      color: #fff;
-      font-size: 17px;
-      font-weight: bold;             /* ← ainda mais forte */
-      letter-spacing: 1.2px;
-      margin: 36px 0 14px;
+      color: #FFD700;               /* ↑ contraste */
+      font-size: 18px;              /* ↑ tamanho */
+      font-weight: 800;             /* ↑ bem mais grosso */
+      letter-spacing: 1.6px;
+      margin: 40px 0 18px;
+      text-transform: uppercase;
     }
 
     /* TEXTO */
     p {
-      margin: 12px auto;
+      margin: 14px auto;
       font-size: 18px;
       line-height: 1.45;
       letter-spacing: 0.1px;
       color: #eaeaea;
     }
 
+    /* ENCERRAMENTO DE CAPÍTULO (RESPIRO REAL) */
+    .fim-capitulo {
+      margin-bottom: 72px;          /* ← ISSO resolve o colado */
+    }
+
     img {
       display: block;
-      margin: 28px auto 36px;
+      margin: 30px auto 40px;
       max-width: 100%;
     }
 
-    /* BOTÃO */
     .botao {
       display: inline-block;
-      margin: 64px auto 20px;
+      margin: 70px auto 20px;
       padding: 18px 52px;
       background-color: #FFD700;
       color: #000;
@@ -90,10 +95,10 @@
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 30px; }
-      h2 { font-size: 19px; }
-      h3 { font-size: 18px; }
-      h4 { font-size: 16px; }
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 20px; }
+      h4 { font-size: 17px; }
       p  { font-size: 16px; }
     }
   </style>
@@ -106,7 +111,15 @@
     <h1>SISTEMA I</h1>
     <h2>SILÊNCIO INTERNO</h2>
 
-    <!-- CONTEÚDO ENTRA AQUI -->
+    <!-- EXEMPLO DE ESTRUTURA (não é conteúdo novo) -->
+    <!--
+    <h3>CAPÍTULO 1</h3>
+    <h4>REALINHAMENTO</h4>
+    <p>Texto...</p>
+    <div class="fim-capitulo"></div>
+    -->
+
+<!-- CONTEÚDO ENTRA AQUI -->
 
     
 <h2>O SILÊNCIO QUE ACORDA A PRESENÇA</h2>
