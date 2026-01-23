@@ -26,7 +26,7 @@
       color: #FFD700;
       font-size: 38px;
       letter-spacing: 2.5px;
-      margin: 0 0 4px;
+      margin: 0 0 6px;
       font-weight: 700;
     }
 
@@ -34,49 +34,60 @@
       color: #FFD700;
       font-size: 22px;
       letter-spacing: 1.4px;
-      margin: 0 0 40px;
+      margin: 0 0 36px;
       font-weight: 500;
     }
 
     /* TÍTULO DE CAPÍTULO */
     h3 {
       color: #ffffff;
-      font-size: 22px;              /* ↑ maior */
-      font-weight: 700;             /* ↑ peso real */
+      font-size: 24px;
+      font-weight: 700;
       letter-spacing: 1.2px;
-      margin: 64px 0 22px;          /* ↑ respiro acima */
+      margin: 70px 0 16px;
     }
 
-    /* SUBTÍTULOS INTERNOS (REALINHAMENTO etc) */
+    /* SUBTÍTULO DO CAPÍTULO */
+    .subcapitulo {
+      color: #bdbdbd;
+      font-size: 17px;
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+    }
+
+    /* SEÇÕES INTERNAS: REALINHAMENTO, INSTALAÇÃO, ETC */
     h4 {
-      color: #FFD700;               /* ↑ contraste */
-      font-size: 18px;              /* ↑ tamanho */
-      font-weight: 800;             /* ↑ bem mais grosso */
+      color: #FFD700;
+      font-size: 18px;
+      font-weight: 800;
       letter-spacing: 1.6px;
-      margin: 40px 0 18px;
+      margin-top: 44px;
+      margin-bottom: 18px;
       text-transform: uppercase;
     }
 
     /* TEXTO */
     p {
-      margin: 14px auto;
+      margin: 0 auto 18px;
       font-size: 18px;
       line-height: 1.45;
       letter-spacing: 0.1px;
       color: #eaeaea;
     }
 
-    /* ENCERRAMENTO DE CAPÍTULO (RESPIRO REAL) */
-    .fim-capitulo {
-      margin-bottom: 72px;          /* ← ISSO resolve o colado */
-    }
-
+    /* IMAGEM */
     img {
       display: block;
-      margin: 30px auto 40px;
+      margin: 22px auto 34px;
       max-width: 100%;
     }
 
+    /* ESPAÇO ENTRE CAPÍTULOS */
+    .fim-capitulo {
+      margin-bottom: 90px;
+    }
+
+    /* BOTÃO */
     .botao {
       display: inline-block;
       margin: 70px auto 20px;
@@ -90,14 +101,10 @@
       letter-spacing: 0.5px;
     }
 
-    .botao:hover {
-      opacity: 0.9;
-    }
-
     @media (max-width: 600px) {
       h1 { font-size: 32px; }
       h2 { font-size: 20px; }
-      h3 { font-size: 20px; }
+      h3 { font-size: 22px; }
       h4 { font-size: 17px; }
       p  { font-size: 16px; }
     }
@@ -111,22 +118,15 @@
     <h1>SISTEMA I</h1>
     <h2>SILÊNCIO INTERNO</h2>
 
-    <!-- EXEMPLO DE ESTRUTURA (não é conteúdo novo) -->
-    <!--
-    <h3>CAPÍTULO 1</h3>
-    <h4>REALINHAMENTO</h4>
-    <p>Texto...</p>
-    <div class="fim-capitulo"></div>
-    -->
+    <!-- ===== CAPÍTULOS ENTRAM AQUI ===== -->
 
-<!-- CONTEÚDO ENTRA AQUI -->
 
-    
-<h2>O SILÊNCIO QUE ACORDA A PRESENÇA</h2>
+<!-- CAPÍTULO 1 -->
 
-<p>QUIETUDE INTERNA QUE REVELA</p>
+<h3>O SILÊNCIO QUE ACORDA A PRESENÇA</h3>
+<p class="subcapitulo">QUIETUDE INTERNA QUE REVELA</p>
 
-<!-- ESTILO DA IMAGEM VMP (apenas no Capítulo 1) -->
+<!-- ESTILO DA IMAGEM VMP (somente neste capítulo) -->
 <style>
 .imagem-vmp {
   width: 100%;
@@ -134,55 +134,65 @@
   aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
-  margin: 20px auto 26px;
+  margin: 22px auto 34px;
   border-radius: 6px;
 }
 </style>
 
-<!-- ESPAÇO RESERVADO PARA A IMAGEM DO CAPÍTULO 1 -->
 <img 
   src="img/placeholder.png" 
   alt="Espaço reservado para imagem do Capítulo 1"
   class="imagem-vmp">
 
-<p>Palavras em excesso saturam o ambiente.<br>
+<p>
+Palavras em excesso saturam o ambiente.<br>
 Quem fala demais se espalha.<br>
 Mostrar só a superfície esconde tensão.<br>
 O ruído ocupa tudo.<br>
 No meio disso, você percebe que algo não se fixa.<br>
-O silêncio começa a incomodar.</p>
+O silêncio começa a incomodar.
+</p>
 
-<h3>REALINHAMENTO:</h3>
+<h4>REALINHAMENTO:</h4>
 
-<p>Ajustar o tom não resolve.<br>
+<p>
+Ajustar o tom não resolve.<br>
 O problema nasce do desalinhamento interno.<br>
 Sem eixo, o estado se fragmenta.<br>
 Quietude forçada se rompe rápido.<br>
 Quando o eixo se firma, algo se assenta.<br>
 A coerência se organiza.<br>
-Algo passa a sustentar por dentro.</p>
+Algo passa a sustentar por dentro.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
+<h4>INSTALAÇÃO:</h4>
 
-<p>Pare o ruído.<br>
+<p>
+Pare o ruído.<br>
 Sinta o centro.<br>
 Não acrescente nada.<br>
-Permaneça.</p>
+Permaneça.
+</p>
 
-<h3>REFINAMENTO:</h3>
+<h4>REFINAMENTO:</h4>
 
-<p>Ambiente comum. Pessoas falando ao redor.<br>
+<p>
+Ambiente comum. Pessoas falando ao redor.<br>
 Você permanece quieto por dentro.<br>
 Olhares passam. Alguns retornam.<br>
 O ritmo das conversas desacelera.<br>
-Algo se fixa.</p>
+Algo se fixa.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4>SUSTENTAÇÃO:</h4>
 
-<p>O que sustenta não aparece.<br>
-Mas nunca passa despercebido.</p>
+<p>
+O que sustenta não aparece.<br>
+Mas nunca passa despercebido.
+</p>
 
-    <div class="fim-capitulo"></div>
+<div class="fim-capitulo"></div>
+
 
 <h2>INVISIBILIDADE MASCULINA: A DOR OCULTA</h2>
 
@@ -624,8 +634,10 @@ Você não explica.</p>
 Princípio permanece.</p>
     
     
-    <!-- AÇÃO -->
-<a href="volume2.html" class="botao">
+
+    <!-- ================================ -->
+
+    <a href="volume2.html" class="botao">
       Avançar
     </a>
 
