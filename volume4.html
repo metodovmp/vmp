@@ -11,79 +11,89 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.75;
+      line-height: 1.55;
     }
 
-    /* CONTEÚDO CENTRAL ÚNICO */
     .vmp-content {
       max-width: 640px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 36px 18px;
       text-align: center;
     }
 
-    /* TÍTULOS PRINCIPAIS */
-    h1, h2 {
-      color: #FFD700; /* dourado */
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+    /* Título do Sistema */
+    h1 {
+      color: #FFD700;
+      font-size: 38px;
+      letter-spacing: 2.5px;
+      margin: 0 0 4px;
+      font-weight: 700;
     }
 
-    h1 { 
-      margin-bottom: 20px; 
-      letter-spacing: 2px;
-      font-size: 36px;
-    }
-
-    h2 { 
-      margin-bottom: 40px; 
+    h2 {
+      color: #FFD700;
       font-size: 22px;
-      font-weight: normal;
-      letter-spacing: 1px;
+      letter-spacing: 1.4px;
+      margin: 0 0 40px;
+      font-weight: 500;
     }
 
-    /* SUBTÍTULOS */
-    h3, h4 {
-      color: #fff;
-      text-align: center;
-      margin-top: 36px;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 1.65;
+    /* Título de Capítulo */
+    h3 {
+      color: #FFD700;      /* dourado */
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin: 64px 0 22px;
     }
 
-    /* TEXTO */
+    /* Subtítulos internos (REALINHAMENTO, INSTALAÇÃO etc) */
+    h4.subtitulo {
+      color: #ffffff !important;  /* branco para todos os capítulos */
+      font-size: 18px;             /* tamanho igual em todos os capítulos */
+      font-weight: 800;            /* mesma grossura para todos */
+      letter-spacing: 1.2px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    /* Texto */
     p {
-      text-align: center;
-      margin: 20px auto;
+      margin: 14px auto;
       font-size: 18px;
-      line-height: 1.65;
+      line-height: 1.45;
       letter-spacing: 0.1px;
       color: #eaeaea;
     }
 
-    /* IMAGENS / PLACEHOLDER */
-    img,
-    .imagem-placeholder {
+    /* Imagens do capítulo */
+    img {
       display: block;
-      margin: 40px auto;
+      margin: 30px auto 40px;
       max-width: 100%;
+      border-radius: 6px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
     }
 
-    /* BOTÃO OVAL PREMIUM */
+    /* Espaço entre capítulos */
+    .fim-capitulo {
+      margin-bottom: 72px;
+    }
+
+    /* Botão */
     .botao {
       display: inline-block;
-      margin: 60px auto 20px;
-      padding: 18px 56px;
+      margin: 70px auto 20px;
+      padding: 18px 52px;
       background-color: #FFD700;
       color: #000;
       text-decoration: none;
       font-weight: bold;
       border-radius: 999px;
-      font-size: 18px;
+      font-size: 17px;
       letter-spacing: 0.5px;
-      transition: opacity 0.2s ease;
     }
 
     .botao:hover {
@@ -91,48 +101,29 @@
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 12px 8px;
-      }
-
-      .botao {
-        padding: 16px 40px;
-        font-size: 16px;
-      }
-
-      h1 {
-        font-size: 32px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
-
-      p, h3, h4 {
-        font-size: 16px;
-      }
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 22px; }
+      h4.subtitulo { font-size: 17px; }
+      p  { font-size: 16px; }
     }
   </style>
 </head>
 
 <body>
-
   <div class="vmp-content">
 
-    <!-- CABEÇALHO DO SISTEMA -->
+<!-- CABEÇALHO DO SISTEMA -->
     <h1>SISTEMA IV</h1>
 <h2>RESPEITO</h2>
 
-    <!-- 👉 AQUI ENTRAM OS 10 CAPÍTULOS DO SISTEMA IV -->
+    <!-- ================== CAPÍTULOS ================== -->
 
 
-    <!-- CAPÍTULO 1 - VOLUME 4 -->
+<h3>TENSÃO SEXUAL: A PRESENÇA DO OLHAR E DO CORPO</h3>
+<p class="subtitulo">CONTATO SUSTENTADO QUE INQUIETA</p>
 
-<h2>TENSÃO SEXUAL: A PRESENÇA DO OLHAR E DO CORPO</h2>
-
-<p>CONTATO SUSTENTADO QUE INQUIETA</p>
-
-<!-- ESTILO DA IMAGEM VMP (somente para o primeiro capítulo do sistema; mantém consistência) -->
+<!-- ESTILO PARA IMAGEM 4:5 (aplicável a todos os capítulos) -->
 <style>
 .imagem-vmp {
   width: 100%;
@@ -140,503 +131,557 @@
   aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
-  margin: 20px auto 26px;
+  margin: 22px auto 34px;
   border-radius: 6px;
 }
 </style>
 
-<!-- IMAGEM DO CAPÍTULO 31 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="Da insegurança ao magnetismo psicológico"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 31"
   class="imagem-vmp">
 
-<p>Tensão sexual não nasce de palavras ou toques.<br>
+<p>
+Tensão sexual não nasce de palavras ou toques.<br>
 O desejo surge antes de qualquer movimento.<br>
 Tentar acelerar cria desconforto imediato.<br>
 Você sente que olhar e corpo falam primeiro.<br>
 O ambiente carrega algo invisível quando estão alinhados.<br>
-O fluxo da presença interna se percebe sem esforço.</p>
+O fluxo da presença interna se percebe sem esforço.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Tensão falsa nasce do desalinhamento interno.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Tensão falsa nasce do desalinhamento interno.<br>
 Sem profundidade, o olhar e o corpo ficam superficiais.<br>
 Forçar desejo externo reduz integridade.<br>
 Cada ação direta enfraquece peso interno.<br>
 Quando o eixo se firma, olhar e corpo geram tensão natural.<br>
 O interno guia o estado.<br>
-A tensão sexual surge do silêncio.</p>
+A tensão sexual surge do silêncio.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>O corpo não pede.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+O corpo não pede.<br>
 O olhar não escapa.<br>
 A tensão se mantém.<br>
-Nada precisa acontecer.</p>
+Nada precisa acontecer.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Contato visual breve.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Contato visual breve.<br>
 Você não sustenta demais.<br>
 Nem desvia rápido.<br>
 O corpo permanece calmo.<br>
-Algo fica suspenso no ar.</p>
+Algo fica suspenso no ar.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Tensão sexual não é provocada.<br>
+Ela é revelada.
+</p>
 
-<p>Tensão sexual não é provocada.<br>
-Ela é revelada.</p>
+<div class="fim-capitulo"></div>
+
+
     
+<h3>GATILHOS INVISÍVEIS QUE ELEVAM SEU VALOR</h3>
+<p class="subtitulo">ESTADO QUE FAZ SER REGISTRADO</p>
 
-
-<!-- CAPÍTULO 32 -->
-
-<h2>GATILHOS INVISÍVEIS QUE ELEVAM SEU VALOR</h2>
-
-<p>ESTADO QUE FAZ SER REGISTRADO</p>
-
-<!-- IMAGEM DO CAPÍTULO -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="Da insegurança ao magnetismo psicológico"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 32"
   class="imagem-vmp">
 
-<p>Valor alto surge sem anúncio.<br>
+<p>
+Valor alto surge sem anúncio.<br>
 O que mais impacta não é dito nem mostrado.<br>
 Demonstrar valor só o diminui.<br>
 Sutilezas mudam toda percepção.<br>
 Gatilhos silenciosos passam despercebidos.<br>
-Você percebe o efeito no ambiente.</p>
+Você percebe o efeito no ambiente.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Valor baixo nasce da falta de ancoragem interna.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Valor baixo nasce da falta de ancoragem interna.<br>
 Sem base firme, o estado depende de validação.<br>
 Buscar elevação externa diminui coerência.<br>
 Cada demonstração reduz densidade.<br>
 Quando a ancoragem se firma, gatilhos invisíveis ativam.<br>
 O centro eleva sozinho.<br>
-O valor se torna percebido sem esforço.</p>
+O valor se torna percebido sem esforço.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Não explique.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Não explique.<br>
 Não ajuste.<br>
 Permaneça inteiro.<br>
-O valor aparece.</p>
+O valor aparece.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Interação simples.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Interação simples.<br>
 Você não reage como esperado.<br>
 Não explica, não compensa.<br>
 A resposta vem atrasada.<br>
-Você já seguiu em frente.</p>
+Você já seguiu em frente.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Valor não é anunciado.<br>
+É gatilho invisível.
+</p>
 
-<p>Valor não é anunciado.<br>
-É gatilho invisível.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 33 -->
+    <h3>O SILÊNCIO QUE FAZ O MUNDO PARAR</h3>
+<p class="subtitulo">PAUSA ABSOLUTA QUE DESACELERA</p>
 
-<h2>O SILÊNCIO QUE FAZ O MUNDO PARAR</h2>
-
-<p>PAUSA ABSOLUTA QUE DESACELERA</p>
-
-<!-- IMAGEM DO CAPÍTULO 33 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="O silêncio que faz o mundo parar"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 33"
   class="imagem-vmp">
 
-<p>O barulho preenche cada canto, mas nada fixa.<br>
+<p>
+O barulho preenche cada canto, mas nada fixa.<br>
 O movimento ao redor segue indiferente.<br>
 Você sente que o silêncio incomoda mais que palavras.<br>
 Quanto mais falam, menos impacto se mantém.<br>
 Alguns tentam preencher, outros se perdem.<br>
-O vazio pesa mais que palavras.</p>
+O vazio pesa mais que palavras.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Silêncio fraco nasce da falta de quietude interna.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Silêncio fraco nasce da falta de quietude interna.<br>
 Sem sustentação, ele se dispersa.<br>
 Preencher com palavras enfraquece presença.<br>
 Cada interrupção diminui peso interno.<br>
 Quando a quietude se firma, o silêncio ganha poder.<br>
 O interno para o fluxo.<br>
-O mundo se ajusta ao vazio sustentado.</p>
+O mundo se ajusta ao vazio sustentado.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Fique.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Fique.<br>
 Não responda.<br>
 O espaço se organiza.<br>
-O silêncio assume.</p>
+O silêncio assume.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>O ambiente continua.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+O ambiente continua.<br>
 Você para por dentro.<br>
 Nada é anunciado.<br>
 As vozes diminuem sozinhas.<br>
-O tempo parece desacelerar.</p>
+O tempo parece desacelerar.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Silêncio não é ausência.<br>
+Ele para o mundo.
+</p>
 
-<p>Silêncio não é ausência.<br>
-Ele para o mundo.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 34 -->
+    <h3>O CÓDIGO DA AUTOCONFIANÇA INABALÁVEL</h3>
+<p class="subtitulo">FIRMEZA INTERNA QUE É EVIDENTE</p>
 
-<h2>O CÓDIGO DA AUTOCONFIANÇA INABALÁVEL</h2>
-
-<p>FIRMEZA INTERNA QUE É EVIDENTE</p>
-
-<!-- IMAGEM DO CAPÍTULO 34 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="O código da autoconfiança inabalável"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 34"
   class="imagem-vmp">
 
-<p>Confiança vacila com cada olhar alheio.<br>
+<p>
+Confiança vacila com cada olhar alheio.<br>
 A inabalável não depende de ninguém.<br>
 Tentar construir confiança externa fragiliza.<br>
 Você sente que algo precisa se confirmar.<br>
 O código é sempre interno.<br>
-A presença interna dita respeito antes de qualquer gesto.</p>
+A presença interna dita respeito antes de qualquer gesto.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Confiança frágil nasce de eixo vacilante.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Confiança frágil nasce de eixo vacilante.<br>
 Sem decisão interna, o estado depende do externo.<br>
 Buscar validação diminui consistência.<br>
 Cada hesitação reduz sustentação interna.<br>
 Quando a decisão interna se firma, a confiança vira código.<br>
 O centro é inabalável.<br>
-A autoconfiança surge como consequência natural.</p>
+A autoconfiança surge como consequência natural.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Nada a provar.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Nada a provar.<br>
 Nada a defender.<br>
 O corpo sabe.<br>
-A firmeza permanece.</p>
+A firmeza permanece.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Situação comum.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Situação comum.<br>
 Você não se ajusta ao olhar externo.<br>
 Não busca confirmação.<br>
 O corpo responde primeiro.<br>
-A mente acompanha depois.</p>
+A mente acompanha depois.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Autoconfiança não é sentimento.<br>
+É código interno.
+</p>
 
-<p>Autoconfiança não é sentimento.<br>
-É código interno.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 35 -->
+    
+<h3>COMO SER LEMBRADO MESMO EM SILÊNCIO</h3>
+<p class="subtitulo">IMPACTO SILENCIOSO QUE PERDURA</p>
 
-<h2>COMO SER LEMBRADO MESMO EM SILÊNCIO</h2>
-
-<p>IMPACTO SILENCIOSO QUE PERDURA</p>
-
-<!-- IMAGEM DO CAPÍTULO 35 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="Como ser lembrado mesmo em silêncio"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 35"
   class="imagem-vmp">
 
-<p>Passam muitas pessoas pelo mesmo espaço.<br>
+<p>
+Passam muitas pessoas pelo mesmo espaço.<br>
 Conversas vêm e vão sem deixar marca.<br>
 Movimentos acontecem sem direção clara.<br>
 O ambiente reage, mas nada se ancora.<br>
 Olhares cruzam, detalhes se perdem.<br>
-Você percebe que o que permanece é invisível.</p>
+Você percebe que o que permanece é invisível.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Esquecimento nasce da falta de fixação interna.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Esquecimento nasce da falta de fixação interna.<br>
 Sem profundidade, o estado não deixa rastro.<br>
 Buscar lembrança externa diminui densidade.<br>
 Cada tentativa de destaque fragmenta ancoragem.<br>
 Quando a fixação se estabelece, a presença se marca.<br>
-O interno cria memória, como consequência natural.</p>
+O interno cria memória, como consequência natural.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Pouco gesto.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Pouco gesto.<br>
 Estado contínuo.<br>
 Nada chama atenção.<br>
-Tudo fica marcado.</p>
+Tudo fica marcado.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Encontro curto.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Encontro curto.<br>
 Poucas palavras.<br>
 Nenhum esforço extra.<br>
 Horas depois, lembram de você.<br>
-Sem saber por quê.</p>
+Sem saber por quê.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Ser lembrado não é feito.<br>
+É consequência do silêncio fixo.
+</p>
 
-<p>Ser lembrado não é feito.<br>
-É consequência do silêncio fixo.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 36 -->
+    <h3>QUANDO O MUNDO COMEÇA A TE NOTAR</h3>
+<p class="subtitulo">ESTADO CONSOLIDADO QUE ATRAI</p>
 
-<h2>QUANDO O MUNDO COMEÇA A TE NOTAR</h2>
-
-<p>ESTADO CONSOLIDADO QUE ATRAI</p>
-
-<!-- IMAGEM DO CAPÍTULO 36 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="Quando o mundo começa a te notar"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 36"
   class="imagem-vmp">
 
-<p>O mundo passa como se você fosse parte do fundo.<br>
+<p>
+O mundo passa como se você fosse parte do fundo.<br>
 Conversas continuam sem pausa.<br>
 Olhares deslizam por cima.<br>
 Tentar ser visto só aumenta o silêncio.<br>
 O vazio dói quando ninguém te registra.<br>
-O efeito do silêncio se revela no ambiente.</p>
+O efeito do silêncio se revela no ambiente.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Não ser notado nasce de eixo vacilante.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Não ser notado nasce de eixo vacilante.<br>
 Sem base interna, o estado não projeta.<br>
 Buscar atenção externa diminui integridade.<br>
 Cada esforço fragmenta densidade.<br>
 Quando o eixo se firma, o mundo percebe sozinho.<br>
 O interno se revela.<br>
-A notabilidade surge como consequência natural.</p>
+A notabilidade surge como consequência natural.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Sem buscar.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Sem buscar.<br>
 Sem reagir.<br>
 A presença sustenta.<br>
-Os olhares chegam.</p>
+Os olhares chegam.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Nada muda por fora.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Nada muda por fora.<br>
 Você não tenta aparecer.<br>
 Permanece inteiro.<br>
 As reações começam.<br>
-Você observa sem reagir.</p>
+Você observa sem reagir.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+O mundo não nota esforço.<br>
+Nota o que já é.
+</p>
 
-<p>O mundo não nota esforço.<br>
-Nota o que já é.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 37 -->
+    <h3>A NOVA IMAGEM MASCULINA DE RESPEITO</h3>
+<p class="subtitulo">EXPRESSÃO EXTERNA QUE REFLETE</p>
 
-<h2>A NOVA IMAGEM MASCULINA DE RESPEITO</h2>
-
-<p>EXPRESSÃO EXTERNA QUE REFLETE</p>
-
-<!-- IMAGEM DO CAPÍTULO 37 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="A nova imagem masculina de respeito"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 37"
   class="imagem-vmp">
 
-<p>A imagem masculina antiga dependia de volume e demonstração.<br>
+<p>
+A imagem masculina antiga dependia de volume e demonstração.<br>
 Tentar parecer forte só revela o vazio.<br>
 As pessoas respeitam o que não precisa provar.<br>
 O antigo modelo quebra.<br>
 O silêncio do novo respeito pesa.<br>
-Você percebe o efeito da presença interna no ambiente.</p>
+Você percebe o efeito da presença interna no ambiente.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Imagem falsa nasce da falta de coerência interna.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Imagem falsa nasce da falta de coerência interna.<br>
 Sem consistência, o estado vira máscara.<br>
 Buscar respeito externo diminui sustentação interna.<br>
 Cada demonstração fragmenta peso interno.<br>
 Quando a coerência se firma, a nova imagem se revela.<br>
 O interno comanda.<br>
-O respeito surge sozinho.</p>
+O respeito surge sozinho.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Postura simples.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Postura simples.<br>
 Movimento limpo.<br>
 Nada imposto.<br>
-O respeito surge.</p>
+O respeito surge.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Ambiente social.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Ambiente social.<br>
 Você não disputa espaço.<br>
 Não se retrai.<br>
 Ocupa exatamente o seu lugar.<br>
-Isso basta.</p>
+Isso basta.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Respeito não é pedido.<br>
+É imagem interna assumida.
+</p>
 
-<p>Respeito não é pedido.<br>
-É imagem interna assumida.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 38 -->
+    <h3>SER RESPEITADO APENAS POR EXISTIR</h3>
+<p class="subtitulo">LIMITE QUE TRANSMITE RESPEITO</p>
 
-<h2>SER RESPEITADO APENAS POR EXISTIR</h2>
-
-<p>LIMITE QUE TRANSMITE RESPEITO</p>
-
-<!-- IMAGEM DO CAPÍTULO 38 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="Ser respeitado apenas por existir"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 38"
   class="imagem-vmp">
 
-<p>Respeito sempre parece vir de algo feito ou dito.<br>
+<p>
+Respeito sempre parece vir de algo feito ou dito.<br>
 Tentar merecer respeito cria distância sutil.<br>
 Alguns recebem sem esforço.<br>
 O esforço por reconhecimento afasta mais.<br>
 As pessoas sentem o que não precisa provar.<br>
-Você percebe o efeito do limite natural.</p>
+Você percebe o efeito do limite natural.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Respeito conquistado nasce de estado fragmentado.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Respeito conquistado nasce de estado fragmentado.<br>
 Sem quietude interna, precisa de prova constante.<br>
 Buscar merecimento diminui presença silenciosa.<br>
 Cada prova fragmenta ancoragem.<br>
 Quando a quietude se firma, o respeito surge sozinho.<br>
 O interno basta.<br>
-O respeito simplesmente existe.</p>
+O respeito simplesmente existe.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Não compense.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Não compense.<br>
 Não se reduza.<br>
 O espaço aceita.<br>
-Você permanece.</p>
+Você permanece.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Presença simples.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Presença simples.<br>
 Postura neutra.<br>
 Nenhuma afirmação verbal.<br>
 Os limites surgem sozinhos.<br>
-Você não precisa marcá-los.</p>
+Você não precisa marcá-los.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Respeito não é merecido.<br>
+É consequência de ser.
+</p>
 
-<p>Respeito não é merecido.<br>
-É consequência de ser.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 39 -->
+    <h3>MAGNETISMO: O ESTADO NATURAL</h3>
+<p class="subtitulo">ESTADO QUE ATRAI SEM ESFORÇO</p>
 
-<h2>MAGNETISMO: O ESTADO NATURAL</h2>
-
-<p>ESTADO QUE ATRAI SEM ESFORÇO</p>
-
-<!-- IMAGEM DO CAPÍTULO 39 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="Magnetismo: o estado natural"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 39"
   class="imagem-vmp">
 
-<p>Magnetismo comum dependia de truques ou carisma forçado.<br>
+<p>
+Magnetismo comum dependia de truques ou carisma forçado.<br>
 Tentar atrair com esforço repele.<br>
 O que atrai de verdade é simples e constante.<br>
 A demonstração constante cansa.<br>
 O vazio do antigo esforço pesa.<br>
-Você percebe o magnetismo que surge naturalmente.</p>
+Você percebe o magnetismo que surge naturalmente.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Magnetismo forçado nasce de desconexão interna.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Magnetismo forçado nasce de desconexão interna.<br>
 Sem centro firme, o estado depende de técnica.<br>
 Buscar atração externa rouba consistência.<br>
 Cada tentativa diminui densidade.<br>
 Quando o centro se firma, magnetismo se torna natural.<br>
 O interno atrai.<br>
-O estado surge como consequência do ser.</p>
+O estado surge como consequência do ser.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Nada é feito.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Nada é feito.<br>
 Nada é forçado.<br>
 O corpo sustenta.<br>
-O campo se forma.</p>
+O campo se forma.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Convivência contínua.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Convivência contínua.<br>
 Você não sustenta personagem.<br>
 Age igual em qualquer cenário.<br>
 A atração deixa de oscilar.<br>
-Vira pano de fundo.</p>
+Vira pano de fundo.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Magnetismo não é técnica.<br>
+É o novo normal.
+</p>
 
-<p>Magnetismo não é técnica.<br>
-É o novo normal.</p>
+<div class="fim-capitulo"></div>
 
 
-    <!-- CAPÍTULO 40 -->
+    <h3>ATIVAÇÃO PSÍQUICA — O DESPERTAR</h3>
+<p class="subtitulo">ESTADO ABSOLUTO QUE DESPERTA</p>
 
-<h2>ATIVAÇÃO PSÍQUICA — O DESPERTAR</h2>
-
-<p>ESTADO ABSOLUTO QUE DESPERTA</p>
-
-<!-- IMAGEM DO CAPÍTULO 40 -->
+<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
 <img 
-  src="img/file_placeholder_cap21.png"
-  alt="Ativação psíquica — o despertar"
+  src="img/placeholder.png" 
+  alt="Espaço reservado para imagem do Capítulo 40"
   class="imagem-vmp">
 
-<p>Presença comum depende de jogos e palavras.<br>
+<p>
+Presença comum depende de jogos e palavras.<br>
 Tentar atrair com esforço deixa vazio.<br>
 O desejo real surge sem caça.<br>
 O jogo externo cansa rápido.<br>
 O vazio pesa o peito.<br>
-Você sente o despertar que muda tudo.</p>
+Você sente o despertar que muda tudo.
+</p>
 
-<h3>REALINHAMENTO:</h3>
-
-<p>Ativação superficial nasce de eixo vacilante.<br>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+Ativação superficial nasce de eixo vacilante.<br>
 Sem profundidade, o estado fica raso.<br>
 Buscar desejo externo dispersa integridade.<br>
 Cada tentativa diminui peso interno.<br>
 Quando o eixo se firma, a ativação psíquica desperta.<br>
 O interno conecta.<br>
-O despertar surge como consequência final.</p>
+O despertar surge como consequência final.
+</p>
 
-<h3>INSTALAÇÃO:</h3>
-
-<p>Tudo em silêncio.<br>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+Tudo em silêncio.<br>
 Dentro e fora.<br>
 Nenhuma divisão.<br>
-O estado acorda.</p>
+O estado acorda.
+</p>
 
-<h3>REFINAMENTO:</h3>
-
-<p>Percepção ampliada.<br>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+Percepção ampliada.<br>
 Você sente antes de pensar.<br>
 O corpo responde com precisão.<br>
 Nada é forçado.<br>
-Tudo parece óbvio agora.</p>
+Tudo parece óbvio agora.
+</p>
 
-<h3>SUSTENTAÇÃO:</h3>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+Ativação psíquica não é jogo.<br>
+É o despertar final.
+</p>
 
-<p>Ativação psíquica não é jogo.<br>
-É o despertar final.</p>
+<div class="fim-capitulo"></div>
 
 
     <!-- AÇÃO -->
