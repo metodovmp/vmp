@@ -26,8 +26,8 @@
     /* Título principal */
     .main-title {
       color: #FFD700;
-      font-size: 34px;          /* ↓ levemente menor */
-      margin-bottom: 4px;       /* ↓ mais próximo */
+      font-size: 34px;
+      margin-bottom: 4px;
     }
 
     /* Subtítulo da etapa */
@@ -35,15 +35,15 @@
       color: #FFD700;
       font-size: 15px;
       letter-spacing: 2px;
-      margin-bottom: 22px;      /* ↓ menos afastado */
+      margin-bottom: 22px;
     }
 
     /* Texto principal */
     p {
-      margin: 10px auto;        /* ↓ menos espaço vertical */
+      margin: 10px auto;
       color: #eaeaea;
       font-size: 18px;
-      line-height: 1.45;        /* ↓ mais denso */
+      line-height: 1.45;
       letter-spacing: 0.15px;
       max-width: 720px;
     }
@@ -57,17 +57,31 @@
       font-weight: normal;
     }
 
-    /* Placeholder imagem 4:5 */
-    .imagem-placeholder {
-      width: 100%;
-      height: 260px;            /* ↓ menos dominante */
-      background-color: #111;
+    /* Círculo dourado VMP */
+    .circulo-vmp {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #FFD700;
+      color: #000;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #888;
-      font-style: italic;
-      margin: 20px 0 30px;      /* ↓ ajustado */
+      font-weight: bold;
+      font-size: 22px;
+      margin: 20px auto 30px;
+    }
+
+    /* Imagem da introdução (opcional) */
+    .imagem-vmp {
+      display: block;
+      width: auto;
+      max-width: 420px;
+      height: auto;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      margin: 22px auto 34px;
+      border-radius: 6px;
     }
 
     /* Botão */
@@ -98,6 +112,10 @@
   <h1 class="main-title">Sistema VMP — Vida Magnética Psíquica</h1>
   <div class="fase">INTRODUÇÃO</div>
 
+  <!-- Círculo dourado VMP após o subtítulo -->
+  <div class="circulo-vmp">VMP</div>
+
+  <!-- Imagem da introdução (opcional) -->
   <img src="img/Imagem000000006666.png" alt="Imagem da Introdução" class="imagem-vmp">
 
   <!-- Texto conceitual -->
