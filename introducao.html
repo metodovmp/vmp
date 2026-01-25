@@ -35,12 +35,13 @@
       color: #FFD700;
       font-size: 15px;
       letter-spacing: 2px;
-      margin-bottom: 22px;
+      margin-top: 12px;      /* ↑ espaço acima */
+      margin-bottom: 22px;    /* mantém espaço abaixo */
     }
 
     /* Texto principal */
     p {
-      margin: 10px auto;
+      margin: 10px auto;        /* ↓ menos espaço vertical */
       color: #eaeaea;
       font-size: 18px;
       line-height: 1.45;
@@ -57,22 +58,7 @@
       font-weight: normal;
     }
 
-    /* Círculo dourado VMP */
-    .circulo-vmp {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      background-color: #FFD700;
-      color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-      font-size: 22px;
-      margin: 20px auto 30px;
-    }
-
-    /* Imagem da introdução (opcional) */
+    /* Imagem da introdução */
     .imagem-vmp {
       display: block;
       width: auto;
@@ -80,7 +66,7 @@
       height: auto;
       aspect-ratio: 4 / 5;
       object-fit: cover;
-      margin: 22px auto 34px;
+      margin: 22px auto 20px; /* ↓ menos espaço abaixo da imagem */
       border-radius: 6px;
     }
 
@@ -112,7 +98,7 @@
   <h1 class="main-title">Sistema VMP — Vida Magnética Psíquica</h1>
   <div class="fase">INTRODUÇÃO</div>
 
-  <!-- Imagem da introdução (opcional) -->
+  <!-- Imagem da introdução -->
   <img src="img/Imagem000000006666.png" alt="Imagem da Introdução" class="imagem-vmp">
 
   <!-- Texto conceitual -->
@@ -167,4 +153,4 @@
   <a href="volume1.html" class="botao">Prosseguir</a>
 
 </body>
-</html>
+  </html>
