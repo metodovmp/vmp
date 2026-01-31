@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acesso</title>
+
+  <style>
+    body {
+      background: #000;
+      color: #FFD700;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .box {
+      max-width: 320px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      background: #000;
+      border: 1px solid #FFD700;
+      border-radius: 999px;
+      color: #FFD700;
+      font-size: 16px;
+      text-align: center;
+      outline: none;
+    }
+
+    button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 14px;
+      background: #FFD700;
+      border: none;
+      border-radius: 999px;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Digite o código de acesso</h1>
+
+    <input type="password" id="senha" placeholder="Código">
+
+    <button onclick="verificar()">Entrar</button>
+  </div>
+
+  <script>
+    function verificar() {
+      const senhaCorreta = "vmp2026"; // você pode mudar depois
+      const senhaDigitada = document.getElementById("senha").value;
+
+      if (senhaDigitada === senhaCorreta) {
+        window.location.href = "index.html"; // 👉 ABRE A TELA DO PRINT
+      } else {
+        alert("Código inválido");
+      }
+    }
+  </script>
+
+</body>
+</html>
