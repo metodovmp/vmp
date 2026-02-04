@@ -68,6 +68,14 @@
       opacity: 0.85;
     }
   </style>
+
+  <!-- 🔐 BLOQUEIO DE ACESSO -->
+  <script>
+    if (sessionStorage.getItem("vmp_acesso") !== "ok") {
+      window.location.href = "acesso.html";
+    }
+  </script>
+
 </head>
 
 <body>
