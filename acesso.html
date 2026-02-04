@@ -79,6 +79,10 @@
       const senhaDigitada = prompt("Digite a senha:");
 
       if (senhaDigitada === senhaCorreta) {
+        // 🔐 grava sessão de acesso
+        sessionStorage.setItem("vmp_acesso", "ok");
+
+        // redireciona para o ebook
         window.location.href = "index.html";
       } else {
         alert("Código inválido");
