@@ -4,53 +4,60 @@
   <meta charset="UTF-8">
   <title>Acesso</title>
 
+  <!-- AJUSTE MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       background: #000;
       color: #FFD700;
       font-family: Arial, sans-serif;
-      height: 100vh;
       margin: 0;
+      height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-align: center;
+      align-items: center;
     }
 
     .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
       max-width: 320px;
-      width: 100%;
+      gap: 16px;
     }
 
     h1 {
+      color: #FFD700;
       font-size: 18px;
       font-weight: 400;
-      margin-bottom: 24px;
       letter-spacing: 1px;
-    }
-
-    input {
-      width: 100%;
-      padding: 14px;
-      background: #000;
-      border: 1px solid #FFD700;
-      border-radius: 999px;
-      color: #FFD700;
-      font-size: 16px;
+      margin: 0;
       text-align: center;
-      outline: none;
     }
 
-    button {
-      margin-top: 16px;
+    .btn-entrar {
       width: 100%;
       padding: 14px;
       background: #FFD700;
-      border: none;
-      border-radius: 999px;
       color: #000;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .btn-codigo {
+      width: 100%;
+      padding: 14px;
+      background: #000;
+      color: #FFF;
+      font-weight: bold;
+      font-size: 16px;
+      border: 2px solid #FFD700;
+      border-radius: 999px;
       cursor: pointer;
     }
   </style>
@@ -59,20 +66,20 @@
 <body>
 
   <div class="box">
-    <h1>Digite o código de acesso</h1>
+    <h1>Digite sua senha</h1>
 
-    <input type="password" id="senha" placeholder="Código">
+    <button class="btn-codigo">Código</button>
 
-    <button onclick="verificar()">Entrar</button>
+    <button class="btn-entrar" onclick="verificar()">Entrar</button>
   </div>
 
   <script>
     function verificar() {
-      const senhaCorreta = "vmp2026"; // você pode mudar depois
-      const senhaDigitada = document.getElementById("senha").value;
+      const senhaCorreta = "vmp@2026";
+      const senhaDigitada = prompt("Digite a senha:");
 
       if (senhaDigitada === senhaCorreta) {
-        window.location.href = "index.html"; // 👉 ABRE A TELA DO PRINT
+        window.location.href = "index.html";
       } else {
         alert("Código inválido");
       }
