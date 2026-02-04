@@ -1,10 +1,11 @@
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>VMP — Volume V</title>
+
+  <!-- AJUSTE MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
@@ -69,7 +70,7 @@
       color: #eaeaea;
     }
 
-    /* Imagens do capítulo (estilo Volume 1) */
+    /* Imagens do capítulo (padronizado Volume 1) */
     img.imagem-vmp {
       display: block;
       margin: 30px auto 40px;
@@ -103,6 +104,24 @@
       color: #fff;
     }
 
+    /* Botão */
+    .botao {
+      display: inline-block;
+      margin: 70px auto 20px;
+      padding: 18px 52px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 999px;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
+    }
+
     @media (max-width: 600px) {
       h1 { font-size: 32px; }
       h2 { font-size: 20px; }
@@ -114,6 +133,14 @@
 </head>
 
 <body>
+
+  <!-- 🔐 BLOQUEIO DE ACESSO -->
+  <script>
+    if (sessionStorage.getItem("vmp_acesso") !== "ok") {
+      window.location.href = "acesso.html";
+    }
+  </script>
+
   <div class="vmp-content">
 
     <!-- IDENTIDADE DO SISTEMA -->
