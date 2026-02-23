@@ -2,165 +2,171 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>VMP — Introdução</title>
-
-  <!-- AJUSTE MOBILE -->
+  <title>Fase II Completa — VMP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- 🔐 BLOQUEIO CORRETO UPSSELL -->
+  <script>
+    if(sessionStorage.getItem("vmp21_acesso") !== "ok"){
+      window.location.href="acesso.html";
+    }
+  </script>
+
   <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px 12px;
-      text-align: center;
+    body{
+      background:#000;
+      color:#eaeaea;
+      font-family:Arial, sans-serif;
+      max-width:900px;
+      margin:auto;
+      padding:20px 14px;
+      text-align:center;
     }
 
-    /* Mini título (identidade) */
-    .metodo {
-      color: #FFD700;
-      font-size: 14px;
-      letter-spacing: 2px;
-      margin-bottom: 6px;
+    .topo{
+      color:#FFD700;
+      font-size:14px;
+      letter-spacing:2px;
+      margin-bottom:8px;
     }
 
-    /* Título principal */
-    .main-title {
-      color: #FFD700;
-      font-size: 34px;
-      margin-bottom: 4px;
+    h1{
+      color:#FFD700;
+      font-size:34px;
+      margin:6px 0;
     }
 
-    /* Subtítulo da etapa */
-    .fase {
-      color: #FFD700;
-      font-size: 15px;
-      letter-spacing: 2px;
-      margin-top: 12px;
-      margin-bottom: 22px;
+    .sub{
+      color:#FFD700;
+      font-size:15px;
+      letter-spacing:2px;
+      margin-bottom:26px;
     }
 
-    /* Texto principal */
-    p {
-      margin: 10px auto;
-      color: #eaeaea;
-      font-size: 18px;
-      line-height: 1.45;
-      letter-spacing: 0.15px;
-      max-width: 720px;
+    p{
+      font-size:18px;
+      line-height:1.45;
+      margin:10px auto;
+      max-width:720px;
     }
 
-    /* Títulos dos sistemas */
-    .sistema-title {
-      color: #fff;
-      margin-top: 30px;
-      letter-spacing: 1px;
-      font-size: 19px;
-      font-weight: normal;
+    /* ✅ IMAGEM CENTRALIZADA */
+    .imagem-vmp{
+      display:block;
+      width:auto;
+      max-width:420px;
+      height:auto;
+      aspect-ratio:4 / 5;
+      object-fit:cover;
+      margin:25px auto 25px;
+      border-radius:6px;
     }
 
-    /* Imagem da introdução */
-    .imagem-vmp {
-      display: block;
-      width: auto;
-      max-width: 420px;
-      height: auto;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      margin: 22px auto 20px;
-      border-radius: 6px;
+    .lista{
+      margin:26px auto;
+      line-height:1.7;
+      font-size:18px;
     }
 
-    /* Botão */
-    .botao {
-      display: inline-block;
-      margin: 60px auto 20px;
-      padding: 18px 52px;
-      background-color: #FFD700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-      font-size: 17px;
-      letter-spacing: 0.5px;
-      transition: opacity 0.2s ease;
+    .mapa{
+      margin-top:40px;
+      border-top:1px solid #333;
+      padding-top:30px;
     }
 
-    .botao:hover {
-      opacity: 0.9;
+    .botao{
+      display:inline-block;
+      margin:70px auto 30px;
+      padding:18px 54px;
+      background:#FFD700;
+      color:#000;
+      font-weight:bold;
+      text-decoration:none;
+      border-radius:999px;
+      font-size:17px;
+      transition:0.2s;
     }
+
+    .botao:hover{opacity:0.9;}
   </style>
 </head>
 
 <body>
 
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
+<div class="topo">SISTEMA VMP</div>
+<h1>Vida Magnética Psíquica</h1>
+<div class="sub">Fase II Completa • 21 Ativações em 7 Dias</div>
 
-  <!-- Cabeçalho -->
-  <div class="metodo">MÉTODO VMP</div>
-  <h1 class="main-title">Sistema VMP — Vida Magnética Psíquica</h1>
-  <div class="fase">INTRODUÇÃO</div>
+<!-- ✅ IMAGEM -->
+<img src="img/Imagem000000006666.png" alt="Imagem Introdução VMP" class="imagem-vmp">
 
-  <!-- Imagem da introdução -->
-  <img src="img/Imagem000000006666.png" alt="Imagem da Introdução" class="imagem-vmp">
+<p>Não é sedução.<br>É presença silenciosa.</p>
 
-  <!-- Texto conceitual -->
-  <p>Não é sedução.<br>É presença silenciosa.</p>
+<p>Este não é um livro de técnicas externas.<br>
+Nem manual de conquista.</p>
 
-  <p>Este não é livro de técnicas externas.<br>Nem manual de conquista.</p>
+<p>Aqui só há ajuste interno.<br>
+Remoção do ruído que fragmenta.</p>
 
-  <p>Aqui só há ajuste interno.<br>Remoção do ruído que fragmenta.</p>
+<p>Antes do magnetismo, desalinhamento.<br>
+Antes da presença, dispersão.</p>
 
-  <p>Antes do magnetismo, desalinhamento.<br>Antes da presença, dispersão.</p>
+<p>Não para virar alguém diferente.<br>
+Mas para alinhar o que já existe.</p>
 
-  <p>Não para virar alguém diferente.<br>Mas para alinhar o que já existe.</p>
+<p>Nada é adicionado.<br>
+O que sufoca é retirado.</p>
 
-  <p>Nada é adicionado.<br>O que sufoca é retirado.</p>
+<p>Quando o interno se organiza,<br>
+o corpo se assenta,<br>
+o silêncio ganha peso.</p>
 
-  <p>Quando o interno se organiza.<br>O corpo se assenta.<br>O silêncio ganha peso.</p>
+<p>O método não exige esforço social.<br>
+Exige coerência.</p>
 
-  <p>O método não exige esforço social.<br>Exige coerência.</p>
+<div class="lista">
+<p><b>Durante 7 dias, nas 21 Ativações completas, você irá:</b></p>
+• Corrigir desalinhamentos invisíveis<br>
+• Ajustar sua expressão externa<br>
+• Desbloquear seu potencial interno<br>
+• Desenvolver presença silenciosa<br>
+• Consolidar consistência e eixo
+</div>
 
-  <p>Leia com calma.<br>O efeito vem do ajuste.</p>
+<p><b>Regra central:</b><br>
+O interno precede.<br>
+O externo reflete.<br>
+A presença acontece.</p>
 
-  <p>A Vida Magnética Psíquica não se constrói.<br>Ela se reconhece.</p>
+<div class="mapa">
+<h1 style="font-size:26px;">Mapa da Jornada — VMP</h1>
 
-  <!-- Mapa -->
-  <h1 class="main-title" style="margin-top:70px;">MAPA DA JORNADA — VMP</h1>
+<p>O VMP é organizado em 5 Fases.<br>
+Elas não ensinam a agir.<br>
+Elas ajustam o estado que sustenta a ação.</p>
 
-  <p>
-    O VMP é organizado em 5 Sistemas.<br>
-    Eles não ensinam a agir.<br>
-    Eles ajustam o estado que sustenta a ação.
-  </p>
+<p><b>Fase I</b><br>
+Fundação da presença interna</p>
 
-  <h3 class="sistema-title">SISTEMA I — SILÊNCIO INTERNO</h3>
-  <p>Instalação, refinamento e sustentação da presença.</p>
+<p><b>Fase II</b><br>
+Autocontrole e domínio do impacto pessoal</p>
 
-  <h3 class="sistema-title">SISTEMA II — AUTORIDADE</h3>
-  <p>Alinhamento entre estado interno, postura e respeito.</p>
+<p><b>Fase III</b><br>
+Estrutura interna e poder silencioso</p>
 
-  <h3 class="sistema-title">SISTEMA III — REPROGRAMAÇÃO</h3>
-  <p>Quebra de padrões invisíveis e criação de novos estados.</p>
+<p><b>Fase IV</b><br>
+Influência através do olhar e ocupação de espaço</p>
 
-  <h3 class="sistema-title">SISTEMA IV — RESPEITO</h3>
-  <p>Como a presença sustentada é reconhecida externamente.</p>
+<p><b>Fase V</b><br>
+Integração final e ação no mundo real</p>
 
-  <h3 class="sistema-title">SISTEMA V — DOMÍNIO</h3>
-  <p>
-    Integração final.<br>
-    Quando o ajuste deixa de ser esforço.<br>
-    O mapa está à vista.
-  </p>
+<p style="margin-top:30px;">O mapa está à vista.<br>
+A travessia começa agora.</p>
+</div>
 
-  <a href="volume1.html" class="botao">Prosseguir</a>
+<a href="Volume1.html" class="botao">
+  👉 Seguir adiante
+</a>
 
 </body>
 </html>
