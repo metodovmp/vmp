@@ -2,18 +2,18 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Acesso</title>
-
-  <!-- AJUSTE MOBILE -->
+  <title>Fase II completa VMP — Acesso</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * { box-sizing: border-box; }
+
     body {
       background: #000;
       color: #FFD700;
       font-family: Arial, sans-serif;
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,7 +25,14 @@
       align-items: center;
       width: 90%;
       max-width: 320px;
-      gap: 16px;
+      gap: 18px;
+      text-align: center;
+    }
+
+    .linha-superior {
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 3px;
     }
 
     h1 {
@@ -34,19 +41,11 @@
       font-weight: 400;
       letter-spacing: 1px;
       margin: 0;
-      text-align: center;
     }
 
-    .btn-entrar {
-      width: 100%;
-      padding: 14px;
-      background: #FFD700;
-      color: #000;
-      font-weight: bold;
-      font-size: 16px;
-      border: none;
-      border-radius: 999px;
-      cursor: pointer;
+    .sub {
+      color: #aaa;
+      font-size: 13px;
     }
 
     .btn-codigo {
@@ -60,30 +59,34 @@
       border-radius: 999px;
       cursor: pointer;
     }
+
+    .btn-codigo:hover { opacity: 0.85; }
   </style>
 </head>
 
 <body>
 
   <div class="box">
-    <h1>Digite sua senha</h1>
-
-    <button class="btn-codigo">Código</button>
-
-    <button class="btn-entrar" onclick="verificar()">Entrar</button>
+    <div class="linha-superior">ÁREA RESTRITA • FASE II</div>
+    <h1>Digite seu código de acesso</h1>
+    <div class="sub">21 Ativações • Avanço VMP</div>
+    <button class="btn-codigo" onclick="verificar()">Inserir Código</button>
   </div>
 
   <script>
     function verificar() {
-      const senhaCorreta = "vmp@2026";
-      const senhaDigitada = prompt("Digite a senha:");
+
+      const senhaCorreta = "Vmp21#Silencio";
+      const senhaDigitada = prompt("Digite sua senha:");
 
       if (senhaDigitada === senhaCorreta) {
-        // 🔐 grava sessão de acesso
-        sessionStorage.setItem("vmp_acesso", "ok");
 
-        // redireciona para o ebook
+        // libera acesso Upsell
+        sessionStorage.setItem("vmp21_acesso", "ok");
+
+        // redireciona
         window.location.href = "index.html";
+
       } else {
         alert("Código inválido");
       }
