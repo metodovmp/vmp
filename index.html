@@ -2,15 +2,20 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>ENTRE NO VMP</title>
-
-  <!-- AJUSTE MOBILE -->
+  <title>VMP • Fase II Completa — Entrada</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
+  <!-- 🔐 BLOQUEIO DE ACESSO UPSSELL -->
+  <script>
+    const acesso = sessionStorage.getItem("vmp21_acesso");
+
+    if (acesso !== "ok") {
+      window.location.href = "acesso.html";
     }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
 
     body {
       background-color: #000;
@@ -27,19 +32,26 @@
       text-align: center;
     }
 
-    .linha-iniciar {
+    .linha-superior {
       color: #fff;
-      font-size: 15px;
+      font-size: 13px;
       letter-spacing: 2px;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
-    .linha-confirmada {
+    .titulo {
       color: #FFD700;
       font-size: 36px;
       font-weight: 700;
       letter-spacing: 1px;
-      margin-bottom: 26px;
+      margin-bottom: 12px;
+    }
+
+    .sub {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 45px;
+      letter-spacing: 1px;
     }
 
     .botao {
@@ -47,8 +59,8 @@
       align-items: center;
       justify-content: center;
 
-      min-width: 280px;
-      min-height: 56px;
+      min-width: 300px;
+      min-height: 58px;
 
       padding: 0 24px;
       background-color: #000;
@@ -57,35 +69,31 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 16px;
-      letter-spacing: 0.6px;
+      letter-spacing: 1px;
 
       border-radius: 999px;
       border: 1px solid #FFD700;
-      transition: opacity 0.2s ease;
+      transition: 0.2s ease;
     }
 
     .botao:hover {
       opacity: 0.85;
     }
   </style>
-
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
-
 </head>
 
 <body>
 
-  <div class="linha-iniciar">Iniciar</div>
+  <div class="linha-superior">FASE II LIBERADA</div>
 
-  <div class="linha-confirmada">ENTRADA CONFIRMADA</div>
+  <div class="titulo">ENTRADA CONFIRMADA</div>
+
+  <div class="sub">
+    21 ATIVAÇÕES • MÉTODO VMP COMPLETO
+  </div>
 
   <a href="introducao.html" class="botao">
-    Sua entrada foi confirmada
+    👉 INICIAR A TRAVESSIA
   </a>
 
 </body>
