@@ -1,708 +1,143 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>VMP — Sistema I</title>
+<!DOCTYPE html>  <html lang="pt-BR">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>VMP • Fase II Completa</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <style>  
+    body{  
+      background:#000;  
+      color:#fff;  
+      font-family:Arial, sans-serif;  
+      margin:0;  
+      line-height:1.55;  
+    }  
+  
+    .vmp-content{  
+      max-width:640px;  
+      margin:auto;  
+      padding:36px 18px;  
+      text-align:center;  
+    }  
+  
+    h1{  
+      color:#FFD700;  
+      font-size:36px;  
+      letter-spacing:2px;  
+      margin-bottom:6px;  
+    }  
+  
+    .fase{  
+      color:#FFD700;  
+      font-size:14px;  
+      letter-spacing:2px;  
+      margin-bottom:30px;  
+    }  
+  
+    h2{  
+      color:#FFD700;  
+      font-size:22px;  
+      margin-bottom:14px;  
+    }  
+  
+    h3{  
+      font-size:24px;  
+      margin-bottom:26px;  
+      color:#fff;  
+    }  
+  
+    p{  
+      margin:14px auto;  
+      font-size:18px;  
+      color:#eaeaea;  
+      max-width:620px;  
+    }  
+  
+    h4{  
+      margin-top:40px;  
+      margin-bottom:16px;  
+      font-size:18px;  
+      letter-spacing:1px;  
+      text-transform:uppercase;  
+    }  
+  
+    .imagem{  
+      margin:30px auto 40px;  
+      max-width:100%;  
+      border-radius:6px;  
+      aspect-ratio:4/5;  
+      object-fit:cover;  
+    }  
+  
+    .botao{  
+      display:inline-block;  
+      margin:80px auto 20px;  
+      padding:18px 52px;  
+      background:#FFD700;  
+      color:#000;  
+      text-decoration:none;  
+      font-weight:bold;  
+      border-radius:999px;  
+      font-size:17px;  
+    }  
+  
+    .botao:hover{opacity:0.9;}  
+  </style>    <!-- 🔐 BLOQUEIO CORRETO UPSSELL -->    <script>  
+    if(sessionStorage.getItem("vmp21_acesso") !== "ok"){  
+      window.location.href="acesso.html";  
+    }  
+  </script>  </head>  <body>  <div class="vmp-content">  
 
-  <!-- AJUSTE MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>ATIVAÇÃO 1</h1>
+<div class="fase">FASE II • VMP COMPLETO</div>
 
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.55;
-    }
+<h2>O DOMÍNIO JÁ ESTÁ DENTRO DE VOCÊ</h2>
+<h3>EIXO FIRME SOB PRESSÃO</h3>
 
-    .vmp-content {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 36px 18px;
-      text-align: center;
-    }
+<img src="img/placeholder.png" class="imagem">
 
-    /* Título do Sistema */
-    h1 {
-      color: #FFD700;
-      font-size: 38px;
-      letter-spacing: 2.5px;
-      margin: 0 0 4px;
-      font-weight: 700;
-    }
-
-    h2 {
-      color: #FFD700;
-      font-size: 22px;
-      letter-spacing: 1.4px;
-      margin: 0 0 40px;
-      font-weight: 500;
-    }
-
-    /* Título de Capítulo */
-    h3 {
-      color: #FFD700;      
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      margin: 64px 0 22px;
-    }
-
-    /* Subtítulos internos */
-    h4.subtitulo {
-      color: #ffffff !important;  
-      font-size: 18px;             
-      font-weight: 800;            
-      letter-spacing: 1.2px;
-      margin-top: 40px;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
-
-    /* Texto */
-    p {
-      margin: 14px auto;
-      font-size: 18px;
-      line-height: 1.45;
-      letter-spacing: 0.1px;
-      color: #eaeaea;
-    }
-
-    /* Imagens do capítulo */
-    img {
-      display: block;
-      margin: 30px auto 40px;
-      max-width: 100%;
-      border-radius: 6px;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-    }
-
-    /* Espaço entre capítulos */
-    .fim-capitulo {
-      margin-bottom: 72px;
-    }
-
-    /* Botão */
-    .botao {
-      display: inline-block;
-      margin: 70px auto 20px;
-      padding: 18px 52px;
-      background-color: #FFD700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-      font-size: 17px;
-      letter-spacing: 0.5px;
-    }
-
-    .botao:hover {
-      opacity: 0.9;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
-      h4.subtitulo { font-size: 17px; }
-      p  { font-size: 16px; }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
-
-  <div class="vmp-content">
-
-    <h1>SISTEMA I</h1>
-    <h2>SILÊNCIO INTERNO</h2>
-
-    <!-- ================== CAPÍTULOS ================== -->
-
-    
-<h3>O SILÊNCIO QUE ACORDA A PRESENÇA</h3>
-<p class="subcapitulo">QUIETUDE INTERNA QUE REVELA</p>
-
-<!-- ESTILO PARA IMAGEM 4:5 (aplicável a todos os capítulos) -->
-<style>
-.imagem-vmp {
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  display: block;
-  margin: 22px auto 34px;
-  border-radius: 6px;
-}
-</style>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/img66.png" alt="Imagem do Capítulo 1" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
 <p>
-Palavras em excesso saturam o ambiente.<br>
-Quem fala demais se espalha.<br>
-Mostrar só a superfície esconde tensão.<br>
-O ruído ocupa tudo.<br>
-No meio disso, você percebe que algo não se fixa.<br>
-O silêncio começa a incomodar.
+O domínio parece algo a conquistar.<br>
+Mas a luta externa aumenta a dispersão.<br>
+O controle real já existe por dentro.<br>
+O esforço externo cansa.<br>
+O eixo interno sustenta.
 </p>
 
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
+<h4>REALINHAMENTO</h4>
 <p>
-Ajustar o tom não resolve.<br>
-O problema nasce do desalinhamento interno.<br>
-Sem eixo, o estado se fragmenta.<br>
-Quietude forçada se rompe rápido.<br>
-Quando o eixo se firma, algo se assenta.<br>
-A coerência se organiza.<br>
-Algo passa a sustentar por dentro.
+Domínio externo nasce de desconexão interna.<br>
+Sem centro firme, o estado depende de prova.<br>
+Buscar controle fora reduz consistência.<br>
+Quando o centro se firma, o domínio já está.
 </p>
 
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<h4>INSTALAÇÃO</h4>
 <p>
-Pare o ruído.<br>
-Sinta o centro.<br>
-Não acrescente nada.<br>
-Permaneça.
+Não procure fora.<br>
+Não antecipe.<br>
+O centro existe.<br>
+O domínio fica.
 </p>
 
-<h4 class="subtitulo">REFINAMENTO:</h4>
+<h4>REFINAMENTO</h4>
 <p>
-Ambiente comum. Pessoas falando ao redor.<br>
-Você permanece quieto por dentro.<br>
-Olhares passam. Alguns retornam.<br>
-O ritmo das conversas desacelera.<br>
-Algo se fixa.
+Nada novo é adicionado.<br>
+Algo antigo se organiza.<br>
+Você reconhece.<br>
+E sustenta.
 </p>
 
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<h4>SUSTENTAÇÃO</h4>
 <p>
-O que sustenta não aparece.<br>
-Mas nunca passa despercebido.
+O domínio interno é a chave.<br>
+O eixo mantém controle.
 </p>
 
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-    
-<h2>INVISIBILIDADE MASCULINA: A DOR OCULTA</h2>
-<p>AUSÊNCIA QUE NINGUÉM REGISTRA</p>
-
-<img src="img/0002.png" alt="Imagem do Capítulo 2" class="imagem-vmp">
-
-<p>Você ocupa o espaço, mas não marca.<br>
-Conversas seguem sem ajuste.<br>
-Olhares passam direto.<br>
-Nada se fixa.<br>
-Quanto mais movimento, menos efeito.<br>
-Algo não sustenta.</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>Invisibilidade não nasce fora.<br>
-Ela surge do desalinhamento.<br>
-Sem base, o estado se dissolve.<br>
-Compensar com volume derruba densidade.<br>
-Quando o interno se fixa, a sustentação aparece.<br>
-O centro se assenta.<br>
-O excesso deixa de ser necessário.</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>Pare de compensar.<br>
-Sinta o vazio sem fugir.<br>
-Mantenha-se inteiro.<br>
-Permaneça.</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>Interação próxima. Pouca distância.<br>
-Você permanece ali, sem buscar resposta.<br>
-O outro fala mais do que pretendia.<br>
-Pausas surgem.<br>
-Algo se desloca.</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>Invisibilidade não é falta de presença.<br>
-É falta de sustentação.</p>
-
-<div class="fim-capitulo"></div>
-
-    
-<!-- ================== CAPÍTULO 3 ================== -->
-
-<h3>O REFLEXO QUE MENTE SOBRE QUEM VOCÊ É</h3>
-<p class="subtitulo">A IMAGEM EXTERNA QUE DISTORCE</p>
-
-<!-- IMAGEM DO CAPÍTULO 3 -->
-<img src="img/Imagem00003.png" alt="Imagem do Capítulo 3" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-O espelho entrega uma versão incompleta.<br>
-Postura, rosto e roupa parecem no lugar.<br>
-Mesmo assim, algo não coincide.<br>
-Há uma distância silenciosa difícil de explicar.<br>
-Cada ajuste externo espalha mais confusão.<br>
-No reflexo, você reconhece forma, não centro.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-A distorção não nasce da imagem.<br>
-Ela surge do desalinhamento interno.<br>
-Sem eixo, o estado cai em comparação.<br>
-Julgar o externo fragmenta integridade.<br>
-Cada correção superficial reduz densidade.<br>
-Quando o interno se fixa, a base se assenta.<br>
-O estado se estabiliza sem mudar a aparência.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Solte a imagem.<br>
-Fique no que é real.<br>
-Não ajuste o comportamento.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Espelhos ao redor, pessoas passando.<br>
-Você observa sem se ajustar.<br>
-Alguns reagem diferente do esperado.<br>
-O ambiente segue, algo muda.<br>
-Você não precisa confirmar nada.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-O reflexo não sustenta.<br>
-O centro, sim.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-
-<!-- ================== CAPÍTULO 4 ================== -->
-
-<h3>A VERDADE QUE LIBERTA SUA PRESENÇA REAL</h3>
-<p class="subtitulo">A REMOÇÃO DA MÁSCARA QUE SUFOCA</p>
-
-<!-- IMAGEM DO CAPÍTULO 4 -->
-<img src="img/20260125_093751.jpg" alt="Imagem do Capítulo 4" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-Sustentar uma versão fabricada cansa.<br>
-A tensão não relaxa nem em silêncio.<br>
-Camadas de fingimento comprimem o interno.<br>
-Algo precisa ser mantido o tempo todo.<br>
-No esforço de sustentar a fachada, você se dispersa.<br>
-Quando algo cede, o peso aparece.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-A presença falsa nasce do desalinhamento interno.<br>
-Manter a máscara fragmenta o eixo.<br>
-Aceitar mentiras internas corrói integridade.<br>
-Cada concessão derruba densidade.<br>
-Quando a verdade é escolhida, o eixo retorna.<br>
-O interno se reorganiza.<br>
-A presença real se estabelece sem imposição.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Pare de provar.<br>
-Sinta o corpo firme.<br>
-Não acrescente nada.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Ambiente simples, conversa leve.<br>
-Você não tenta sustentar imagem alguma.<br>
-Alguém se aproxima mais do que antes.<br>
-O clima fica direto.<br>
-Nada é forçado.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-A verdade não negocia.<br>
-Ela sustenta.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-    
-<!-- ================== CAPÍTULO 5 ================== -->
-
-<h3>AUTODOMÍNIO: A RAIZ DA PRESENÇA PSÍQUICA</h3>
-<p class="subtitulo">CONTROLE QUE DESPERTA ATRAÇÃO</p>
-
-<!-- IMAGEM DO CAPÍTULO 5 -->
-<img src="img/Imagem0005.png" alt="Imagem do Capítulo 5" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-Reações surgem antes da escolha.<br>
-O externo puxa sem aviso.<br>
-Algo escapa do ritmo próprio.<br>
-Emoções sobem rápido demais.<br>
-No meio disso, você percebe a quebra interna.<br>
-Tentar controlar fora só revela instabilidade.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-O problema não está no outro.<br>
-Ele nasce da ausência de domínio interno.<br>
-Sem eixo, o estado reage ao estímulo.<br>
-Seguir impulsos fragmenta sustentação.<br>
-Quando o domínio interno se firma, o eixo estabiliza.<br>
-O centro deixa de oscilar.<br>
-A presença se organiza sem perseguição.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Interrompa a reação.<br>
-Sinta o centro.<br>
-Espere antes de agir.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Interação casual, tom neutro.<br>
-Você escuta mais do que fala.<br>
-O outro começa a se expor.<br>
-O ritmo desacelera.<br>
-Você permanece estável.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Dominar fora é reação.<br>
-Dominar dentro é raiz.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-
-<!-- ================== CAPÍTULO 6 ================== -->
-
-<h3>LIDERANÇA INTERNA: O TRONO ESTÁ DENTRO</h3>
-<p class="subtitulo">AUTORIDADE QUE NÃO DISPUTA</p>
-
-<!-- IMAGEM DO CAPÍTULO 6 -->
-<img src="img/20260125_100447.jpg" alt="Imagem do Capítulo 6" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-Ambientes cheios criam tensão constante.<br>
-Vozes se sobrepõem sem direção.<br>
-Movimentos tentam ocupar espaço.<br>
-Nada parece se organizar.<br>
-No meio disso, você percebe a ausência de eixo.<br>
-Forçar presença só aumenta o ruído.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Liderança externa sem base nasce frágil.<br>
-O desalinhamento interno gera necessidade de controle.<br>
-Sem eixo, a autoridade oscila.<br>
-Impor derruba densidade.<br>
-Quando o eixo se fixa, o centro sustenta.<br>
-O interno se organiza primeiro.<br>
-A liderança emerge sem confronto.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Assuma a direção por dentro.<br>
-Sinta o corpo estável.<br>
-Não busque resposta externa.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Sala cheia, ruído constante.<br>
-Você não compete por espaço.<br>
-Alguém aguarda sua reação.<br>
-As decisões se reorganizam.<br>
-Você não precisa anunciar nada.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Quem sustenta não disputa.<br>
-O trono não se move.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-
-    <!-- ================== CAPÍTULO 7 ================== -->
-
-<h3>IGNORADO OU INESQUECÍVEL: SUA ESCOLHA</h3>
-<p class="subtitulo">O RASTRO QUE FICA</p>
-
-<!-- IMAGEM DO CAPÍTULO 7 -->
-<img src="img/imagem007.png" alt="Imagem do Capítulo 7" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-Alguns passam e nada muda.<br>
-Conversas seguem como antes.<br>
-O contato termina rápido demais.<br>
-Tudo parece correto, mas vazio.<br>
-Nada permanece depois da saída.<br>
-Você percebe que o ambiente esquece fácil.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Ser ignorado não é azar.<br>
-Vem da falta de eixo interno.<br>
-Sem densidade, o estado não fixa.<br>
-Tentar marcar fora espalha o contato.<br>
-Quando o eixo se firma, algo se ancora.<br>
-O centro sustenta a troca.<br>
-A presença começa a permanecer.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Pare de se misturar.<br>
-Não tente se destacar.<br>
-Fique inteiro.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Ambiente comum, atenção dispersa.<br>
-Você não busca destaque.<br>
-Um olhar retorna mais de uma vez.<br>
-O silêncio cria tensão.<br>
-Você segue no próprio ritmo.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Quem não sustenta desaparece.<br>
-Quem sustenta, fica.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-
-    <!-- ================== CAPÍTULO 8 ================== -->
-
-<h3>MAGNETISMO SILENCIOSO: A NOVA FORÇA MASCULINA</h3>
-<p class="subtitulo">A FORÇA QUE NÃO SE EXIBE</p>
-
-<!-- IMAGEM DO CAPÍTULO 8 -->
-<img 
-  <img src="img/imagem008.png" alt="Imagem do Capítulo 8" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-A força antiga fazia barulho.<br>
-Gestos grandes tentavam ocupar espaço.<br>
-O movimento excessivo chamava atenção.<br>
-O ambiente percebia o esforço antes da intenção.<br>
-Quanto mais exibida, menos respeitada.<br>
-Você percebe que atrair não vem do movimento.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-O magnetismo falso nasce do desalinhamento interno.<br>
-Sem silêncio, o estado se espalha.<br>
-Exibir fragmenta densidade.<br>
-Cada demonstração enfraquece sustentação.<br>
-Quando o silêncio é assumido, o eixo se firma.<br>
-O centro se organiza.<br>
-A força passa a existir sem ação.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Reduza o excesso.<br>
-Sinta o peso interno.<br>
-Não force presença.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Grupo conversando alto.<br>
-Você permanece contido.<br>
-O volume ao redor cai aos poucos.<br>
-As pessoas ajustam o corpo.<br>
-Você não muda.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Força exibida se dissipa.<br>
-Força sustentada atrai.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-
-<!-- ================== CAPÍTULO 9 ================== -->
-
-<h3>SUA PRESENÇA JÁ FALA — APRENDA A DIRIGI-LA</h3>
-<p class="subtitulo">FLUXO INTERNO QUE EMANA</p>
-
-<!-- IMAGEM DO CAPÍTULO 9 -->
-<img src="img/imagem009.png" alt="Imagem do Capítulo 9" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-Você entra e algo se espalha sem controle.<br>
-Reações ao redor surgem fora de ritmo.<br>
-O impulso antecede qualquer escolha.<br>
-Interações perdem direção rápido.<br>
-Tentar conduzir expõe instabilidade.<br>
-O ambiente registra antes que algo seja dito.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-O vazamento nasce do desalinhamento com o centro.<br>
-Sem eixo firme, o estado se dispersa.<br>
-Fluir sem direção derruba consistência.<br>
-Cada escape enfraquece sustentação interna.<br>
-Quando o centro assume, o fluxo se organiza.<br>
-O interno passa a guiar.<br>
-A presença deixa de reagir.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Pare de dispersar.<br>
-Sinta o eixo.<br>
-Mantenha a direção.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Espaço movimentado, vozes cruzadas.<br>
-Você entra sem pressa.<br>
-Alguém percebe antes dos outros.<br>
-O clima se organiza.<br>
-Nada é dito.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Fluxo sem centro se perde.<br>
-Centro firme dirige.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-
-
-    <!-- ================== CAPÍTULO 10 ================== -->
-
-<h3>O PRINCÍPIO QUE TRANSFORMA HOMENS EM SÍMBOLOS</h3>
-<p class="subtitulo">SIGNIFICADO QUE SE IMPÕE SEM INTENÇÃO</p>
-
-<!-- IMAGEM DO CAPÍTULO 10 -->
-<img src="img/imagem0010.png" alt="Imagem do Capítulo 10" class="imagem-vmp">
-
-<!-- TEXTO PRINCIPAL -->
-<p>
-Nem todo homem se torna referência.<br>
-Alguns atravessam o ambiente e se dissolvem.<br>
-Outros permanecem sem esforço visível.<br>
-Nada foi construído para impressionar.<br>
-Você reconhece quem nunca precisou se afirmar.<br>
-O ambiente ajusta sem explicação.
-</p>
-
-<!-- SUBTÍTULOS INTERNOS -->
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Símbolo não nasce da imagem externa.<br>
-Ele surge do alinhamento sustentado no tempo.<br>
-Tentar parecer algo dissolve densidade.<br>
-Oscilar no externo fragmenta integridade.<br>
-Quando o princípio se mantém, o eixo se fixa.<br>
-O interno define o impacto.<br>
-A coerência transforma presença em referência.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Não busque destaque.<br>
-Sinta o centro firme.<br>
-Sustente o estado.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Cena cotidiana, nada especial.<br>
-Você age como sempre.<br>
-As reações não são comuns.<br>
-O ambiente responde.<br>
-Você não explica.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Imagem passa.<br>
-Princípio permanece.
-</p>
-
-<!-- ESPAÇO ENTRE CAPÍTULOS -->
-<div class="fim-capitulo"></div>
-    
-    
-    <!-- ================================ -->
-
-    <a href="volume2.html" class="botao">
-      Avançar
-    </a>
-
-  </div>
-
+<a href="Volume1_cap2.html" class="botao">
+👉 Continuar
+</a>
+
+</div>
 </body>
 </html>
+
+    
