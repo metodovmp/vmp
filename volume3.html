@@ -1,675 +1,375 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>VMP — Sistema III</title>
+<meta charset="UTF-8">
+<title>VMP • Fase II Completa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AJUSTE MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.55;
-    }
+body{
+  background:#000;
+  color:#fff;
+  font-family:Arial, sans-serif;
+  margin:0;
+  line-height:1.55;
+}
 
-    .vmp-content {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 36px 18px;
-      text-align: center;
-    }
+.vmp-content{
+  max-width:640px;
+  margin:auto;
+  padding:36px 18px;
+  text-align:center;
+}
 
-    /* Título do Sistema */
-    h1 {
-      color: #FFD700;
-      font-size: 38px;
-      letter-spacing: 2.5px;
-      margin: 0 0 4px;
-      font-weight: 700;
-    }
+/* ===== ESPAÇO ENTRE ATIVAÇÕES ===== */
+.ativacao{
+  margin-top:120px;
+}
 
-    h2 {
-      color: #FFD700;
-      font-size: 22px;
-      letter-spacing: 1.4px;
-      margin: 0 0 40px;
-      font-weight: 500;
-    }
+/* PRIMEIRA ATIVAÇÃO COLADA NO TOPO */
+.ativacao:first-of-type{
+  margin-top:0;
+}
 
-    /* Título de Capítulo */
-    h3 {
-      color: #FFD700;      
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      margin: 64px 0 22px;
-    }
+/* ===== FASE ===== */
+.linha-superior{
+  color:#FFD700;
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:6px;
+}
 
-    /* Subtítulos internos */
-    h4.subtitulo {
-      color: #ffffff !important;  
-      font-size: 18px;             
-      font-weight: 800;            
-      letter-spacing: 1.2px;
-      margin-top: 40px;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
+/* ===== ATIVAÇÃO (BRANCA) ===== */
+h1{
+  color:#fff;
+  font-size:36px;
+  letter-spacing:2px;
+  margin-bottom:30px;
+}
 
-    /* Texto */
-    p {
-      margin: 14px auto;
-      font-size: 18px;
-      line-height: 1.45;
-      letter-spacing: 0.1px;
-      color: #eaeaea;
-    }
+/* ===== MINI DESCRIÇÃO ===== */
+.mini-descricao{
+  margin-bottom:70px;
+  font-size:18px;
+  color:#eaeaea;
+}
 
-    /* Imagens do capítulo */
-    img {
-      display: block;
-      margin: 30px auto 40px;
-      max-width: 100%;
-      border-radius: 6px;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-    }
+/* ===== CAPÍTULO ===== */
+h2{
+  color:#FFD700;
+  font-size:22px;
+  margin-top:40px;
+}
 
-    /* Espaço entre capítulos */
-    .fim-capitulo {
-      margin-bottom: 72px;
-    }
+h3{
+  font-size:24px;
+  margin-bottom:26px;
+}
 
-    /* Botão */
-    .botao {
-      display: inline-block;
-      margin: 70px auto 20px;
-      padding: 18px 52px;
-      background-color: #FFD700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-      font-size: 17px;
-      letter-spacing: 0.5px;
-    }
+/* ===== TEXTO ===== */
+p{
+  margin:14px auto;
+  font-size:18px;
+  max-width:620px;
+}
 
-    .botao:hover {
-      opacity: 0.9;
-    }
+/* ===== IMAGEM 4:5 GARANTIDA ===== */
+.imagem{
+  display:block;
+  margin:30px auto 40px;
+  width:100%;
+  max-width:420px;
 
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
-      h4.subtitulo { font-size: 17px; }
-      p  { font-size: 16px; }
-    }
-  </style>
+  aspect-ratio:4/5;
+  min-height:260px;
+
+  object-fit:cover;
+  border-radius:8px;
+
+  background:#111;
+  border:1px solid #FFD700;
+}
+
+/* ===== BOTÃO CENTRAL ===== */
+.botao{
+  display:block;
+  width:fit-content;
+  margin:100px auto 40px;
+  padding:18px 52px;
+  background:#FFD700;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:999px;
+  font-size:17px;
+}
+
+.botao:hover{opacity:0.9;}
+
+</style>
+
+<script>
+if(sessionStorage.getItem("vmp21_acesso") !== "ok"){
+  window.location.href="acesso.html";
+}
+</script>
+
 </head>
 
 <body>
-
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
-
-  <div class="vmp-content">
-
-<!-- CABEÇALHO DO SISTEMA -->
-    <h1>SISTEMA III</h1>
-<h2>REPROGRAMAÇÃO</h2>
-
-    <!-- ================== CAPÍTULOS ================== -->
-
-
-<h3>DA INSEGURANÇA AO MAGNETISMO PSICOLÓGICO</h3>
-<p class="subtitulo">DÚVIDA QUE BLOQUEIA PRESENÇA</p>
-
-<!-- ESTILO PARA IMAGEM 4:5 (aplicável a todos os capítulos) -->
-<style>
-.imagem-vmp {
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  display: block;
-  margin: 22px auto 34px;
-  border-radius: 6px;
-}
-</style>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0021.png" alt="Imagem do Capítulo 21" class="imagem-vmp">
-
-<p>
-A insegurança surge em cada hesitação.<br>
-Você sente quando o medo interno começa a repelir o ambiente.<br>
-Tentar esconder a dúvida só a torna mais visível.<br>
-Muitos carregam um vazio que é percebido sem palavras.<br>
-A confiança parece sempre distante.<br>
-O magnetismo silencioso começa a se insinuar.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-A insegurança nasce da falta de integridade.<br>
-Sem base, o estado se fragmenta.<br>
-Buscar aprovação rouba coerência.<br>
-Cada hesitação enfraquece presença silenciosa.<br>
-Quando a integridade retorna, o magnetismo emerge.<br>
-O centro atrai.<br>
-A transformação se instala.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Pare de se contrair.<br>
-Sinta o corpo se firmar.<br>
-A dúvida se dissolve sozinha.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Interação próxima.<br>
-Você não tenta parecer seguro.<br>
-Não compensa, não se fecha.<br>
-Algo em você para de oscilar.<br>
-O clima muda sem aviso.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Insegurança não determina destino.<br>
-É ausência de integridade.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>REPROGRAME SUA PRESENÇA MASCULINA</h3>
-<p class="subtitulo">FLUXO QUE EMITE POLARIDADE</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0022.png" alt="Imagem do Capítulo 22" class="imagem-vmp">
-
-<p>
-Você percebe que sua presença reage demais ao externo.<br>
-A força interna existe, mas não encontra direção.<br>
-Padrões antigos se repetem em cada interação.<br>
-Às vezes a masculinidade vacila, outras vezes exagera.<br>
-Tentar controlar ou forçar só amplia o caos.<br>
-Falta um domínio interno silencioso que organize o estado.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-A densidade desregulada nasce do desalinhamento com o eixo.<br>
-Sem direção interna, a presença se dispersa ou explode.<br>
-Reagir ao externo rouba consistência.<br>
-Cada padrão repetido enfraquece a ancoragem.<br>
-Quando o eixo é restaurado, a presença se torna fluida.<br>
-O centro passa a guiar a força.<br>
-A masculinidade emerge como consequência do alinhamento.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Interrompa o padrão antigo.<br>
-Volte para o corpo.<br>
-Não reaja como antes.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Dia cheio, estímulos constantes.<br>
-Você não reage a tudo.<br>
-Respira, mantém o ritmo.<br>
-A pressa ao redor não te puxa.<br>
-Seu tempo começa a conduzir.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Energia masculina não é caos.<br>
-É eixo reprogramado.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>SEU CORPO É O CAMPO DO PODER PSÍQUICO</h3>
-<p class="subtitulo">VEÍCULO ALINHADO QUE EMITE</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0023.png" alt="Imagem do Capítulo 23" class="imagem-vmp">
-
-<p>
-O corpo parece só suporte.<br>
-Presença não vem de gestos externos.<br>
-Você sente o físico falar antes da mente.<br>
-Buscar força fora deixa vazio.<br>
-O corpo conectado ao centro transmite primeiro.<br>
-As pessoas sentem antes de entender.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-A presença fraca não nasce fora.<br>
-Ela surge do desalinhamento entre corpo e centro.<br>
-Sem conexão física, o estado se fragmenta.<br>
-Buscar poder externo diminui ancoragem.<br>
-Cada desconexão enfraquece densidade.<br>
-Quando o alinhamento se fixa, o campo se forma.<br>
-O corpo sustenta.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Sinta o peso do corpo.<br>
-O espaço ao redor responde.<br>
-Nada precisa ser feito.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Ambiente comum.<br>
-Você sente os pés no chão.<br>
-O corpo para de fugir.<br>
-Nada é forçado.<br>
-As pessoas sentem antes de entender.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Corpo não carrega presença.<br>
-Corpo é o campo.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>A PRESENÇA QUE QUEBRA A INVISIBILIDADE</h3>
-<p class="subtitulo">DENSIDADE INTERNA QUE REGISTRA</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0024.png" alt="Imagem do Capítulo 24" class="imagem-vmp">
-
-<p>
-Você entra e nada parece mudar.<br>
-Conversas seguem, olhares passam.<br>
-O corpo ocupa espaço sem marcar.<br>
-Chamar atenção só amplia o vazio.<br>
-A invisibilidade pesa mais que o silêncio.<br>
-Algo ainda não sustenta.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Invisibilidade não nasce fora.<br>
-Ela vem do desalinhamento interno.<br>
-Sem eixo, o estado não se projeta.<br>
-Buscar visibilidade externa diminui coerência.<br>
-Cada tentativa externa fragiliza densidade.<br>
-Quando o alinhamento se fixa, a presença registra.<br>
-O interno atravessa sem esforço.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Não tente aparecer.<br>
-Sustente o estado interno.<br>
-Deixe o ambiente registrar.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Você entra no ambiente.<br>
-Não se ajusta, não se explica.<br>
-Permanece inteiro.<br>
-Alguns olhares voltam.<br>
-Você não faz nada com isso.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Visibilidade não se pede.<br>
-Ela surge da densidade sustentada.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>SEJA DESEJADO SEM PEDIR APROVAÇÃO</h3>
-<p class="subtitulo">ESTADO COMPLETO QUE DESPERTA</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0025.png" alt="Imagem do Capítulo 25" class="imagem-vmp">
-
-<p>
-O desejo aparece quando nada é solicitado.<br>
-A tentativa de agradar quebra o fluxo.<br>
-Buscar validação cria ruído invisível.<br>
-Quanto mais esforço, mais distância.<br>
-O interesse responde ao que não implora.<br>
-Você nota quando o pedido some do campo.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-A busca por aprovação nasce do desalinhamento interno.<br>
-Sem eixo firme, o estado depende do externo.<br>
-Pedir validação reduz coerência.<br>
-Cada tentativa fragiliza o peso interno.<br>
-O valor condicionado oscila.<br>
-Quando o valor se sustenta sozinho, o desejo emerge.<br>
-O centro atrai sem sinal.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Retire a expectativa.<br>
-Fique inteiro por dentro.<br>
-Não busque resposta externa.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Troca simples de olhares.<br>
-Você não busca resposta.<br>
-Não muda o comportamento.<br>
-O interesse nasce sozinho.<br>
-Você continua igual.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Desejo não se solicita.<br>
-Ele responde ao valor sustentado.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>SER NOTADO SEM FORÇAR ATENÇÃO</h3>
-<p class="subtitulo">PESO INTERNO QUE ATRAI OLHARES</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0026.png" alt="Imagem do Capítulo 26" class="imagem-vmp">
-
-<p>
-Atenção forçada repele.<br>
-Quanto mais tentativa, menos registro.<br>
-Você entra e o ambiente não responde ao esforço.<br>
-Gestos grandes quebram densidade.<br>
-Voz alta dispersa o campo.<br>
-O vazio aumenta quando o interno não sustenta.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-A busca por atenção nasce de eixo instável.<br>
-Sem base interna, o estado vira demonstração.<br>
-Tentar captar olhares reduz coerência.<br>
-Cada esforço externo fragiliza peso interno.<br>
-Quando o valor se sustenta, a atenção emerge.<br>
-O centro atrai sem sinal.<br>
-O olhar vem como consequência.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Entre sem ajuste algum.<br>
-Mantenha o eixo firme.<br>
-Não sinalize intenção.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Sala cheia.<br>
-Você não compete por espaço.<br>
-Não chama, não empurra.<br>
-Ainda assim, percebem.<br>
-E você não reage.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Atenção não se conquista.<br>
-Ela responde ao valor sustentado.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>ESTRATÉGIAS OCULTAS DE IMPACTO PSICOLÓGICO</h3>
-<p class="subtitulo">MECANISMOS QUE GERAM PERCEPÇÃO</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0027.png" alt="Imagem do Capítulo 27" class="imagem-vmp">
-
-<p>
-Impacto óbvio dura pouco.<br>
-O direto gera resistência imediata.<br>
-Você percebe que o explícito fecha o outro.<br>
-O que se mostra demais perde força.<br>
-O poder psicológico opera fora do foco.<br>
-Algo é sentido antes de ser entendido.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Impacto raso nasce da ausência de presença silenciosa.<br>
-Sem profundidade interna, tudo fica na superfície.<br>
-Buscar reação imediata reduz coerência.<br>
-Cada movimento visível enfraquece ancoragem.<br>
-Quando o silêncio se firma, o impacto aprofunda.<br>
-O interno move sem se expor.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Reduza qualquer excesso.<br>
-Sinta o corpo presente.<br>
-O impacto nasce do estado.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Interação curta.<br>
-Você não revela intenção.<br>
-Não se apressa em agir.<br>
-A reação vem depois.<br>
-Você já saiu da cena.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Impacto real não se exibe.<br>
-Ele acontece no invisível.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>TÉCNICAS AVANÇADAS DE PRESENÇA DOMINANTE</h3>
-<p class="subtitulo">ESTADO QUE TRANSMITE AUTORIDADE</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0028.png" alt="Imagem do Capítulo 28" class="imagem-vmp">
-
-<p>
-Dominância comum depende de volume.<br>
-Tentar parecer dominante revela fragilidade.<br>
-O ambiente cede ao que não pede espaço.<br>
-A presença dominante é quieta.<br>
-O poder se sente sem gesto.<br>
-Você percebe que o domínio real não demonstra.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Dominância falsa nasce de estado fragmentado.<br>
-Sem sustentação interna, vira pose.<br>
-Buscar domínio externo diminui densidade.<br>
-Cada demonstração enfraquece fixação.<br>
-O estado se dispersa quando busca aprovação.<br>
-Quando o eixo se firma, a presença domina.<br>
-O interno comanda sem alarde.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Relaxe sem ceder.<br>
-Sinta a densidade interna.<br>
-Não imponha nada.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Ambiente intenso.<br>
-Você não sobe nem desce.<br>
-Mantém o mesmo eixo.<br>
-O grupo se ajusta.<br>
-Sem ninguém perceber quando.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Dominância não demonstra.<br>
-Ela simplesmente é.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>EXERCÍCIOS DIÁRIOS DE DOMÍNIO PESSOAL</h3>
-<p class="subtitulo">DOMÍNIO QUE SE CONSOLIDA COM REPETIÇÃO</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0029.png" alt="Imagem do Capítulo 29" class="imagem-vmp">
-
-<p>
-Você entende que o controle interno se perde no cotidiano.<br>
-Domínio pessoal parece distante.<br>
-Tentar dominar o externo aumenta o caos.<br>
-Pequenas decisões diárias enfraquecem o eixo.<br>
-O dia parece ditar seu estado.<br>
-O poder real exige constância silenciosa.<br>
-O impacto surge sem esforço.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Perda de domínio nasce da falta de consistência diária.<br>
-Sem prática regular, o estado se dissolve.<br>
-Reagir ao dia rouba sustentação interna.<br>
-Cada interrupção diminui alinhamento.<br>
-O estado vacila sem hábito firme.<br>
-Quando a consistência se firma, o domínio se consolida.<br>
-O interno se torna rotina natural.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Escolha estar presente agora.<br>
-Sinta o estado se assentar.<br>
-Não transforme em tarefa.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Dia comum.<br>
-Pequenas decisões conscientes.<br>
-Nada heroico.<br>
-Nada visível.<br>
-O controle cresce no silêncio.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Domínio não é evento.<br>
-É prática diária.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>O CAMPO MASCULINO QUE TODOS SENTEM</h3>
-<p class="subtitulo">POLARIDADE QUE EMITE PRESENÇA</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0030.png" alt="Imagem do Capítulo 30" class="imagem-vmp">
-
-<p>
-Alguns homens entram e o ar muda.<br>
-Tentar criar presença com esforço enfraquece.<br>
-O campo masculino real não anuncia.<br>
-Você percebe que o invisível se projeta sozinho.<br>
-A força interna não depende de demonstração.<br>
-O impacto surge antes de qualquer gesto.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Campo fraco nasce de desconexão com o centro masculino.<br>
-Sem raiz interna, o estado não projeta.<br>
-Buscar sensação externa diminui integridade.<br>
-Cada tentativa de projeção reduz densidade.<br>
-O eixo firme gera campo estável.<br>
-Quando o centro se firma, o interno cria sentido.<br>
-O campo emerge naturalmente.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Não controle o ambiente.<br>
-Sustente o centro interno.<br>
-Deixe o campo agir.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Pessoas diferentes, mesmo espaço.<br>
-Você não se mistura nem se isola.<br>
-Permanece inteiro.<br>
-Algo se organiza ao redor.<br>
-Ninguém sabe explicar.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Campo masculino não se mostra.<br>
-Ele simplesmente é sentido.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <!-- AÇÃO -->
-    <a href="volume4.html" class="botao">
-  Continuar
-    </a>
-
+<div class="vmp-content">
+
+<!-- ========= ATIVAÇÃO 9 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE III</div>
+  <h1>ATIVAÇÃO 9</h1>
+  
+  <p class="mini-descricao">
+    Corpo e expressão entram em alinhamento.
+    Você aprende a ocupar o espaço naturalmente.
+    O externo começa a responder ao seu estado interno.
+    A coerência substitui qualquer compensação.
+  </p>
+
+  <h2 class="capitulo-titulo">LER O AMBIENTE ANTES DE AGIR</h2>
+  <h3 class="capitulo-subtitulo">OBSERVAÇÃO QUE DEFINE</h3>
+
+  <img src="img/plancheco9.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    O olhar percorre o espaço.<br>
+    Ruídos surgem de todos os lados.<br>
+    Movimentos acontecem sem aviso.<br>
+    O corpo busca ajuste silencioso.<br>
+    O ritmo interno se mantém.<br>
+    Você registra antes de qualquer ação.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    Observar é o primeiro passo do controle.<br>
+    Quando o eixo interno é firme, o externo não apressa resposta.<br>
+    O campo ao redor revela intenções sutis.<br>
+    A densidade interna define ritmo e coerência.<br>
+    Reatividade externa fragmenta percepção.<br>
+    A atenção silenciosa sustenta integridade.<br>
+    O ambiente responde à presença interna.<br>
+    A observação define a leitura.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Observe atentamente.<br>
+    Sinta ritmo do ambiente.<br>
+    Não reaja imediatamente.<br>
+    O fluxo se organiza.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Interação curta.<br>
+    Você não revela intenção.<br>
+    Não se apressa em agir.<br>
+    A reação vem depois.<br>
+    Você já saiu da cena.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    Observe em silêncio.<br>
+    O externo responde.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
+
+<!-- ========= ATIVAÇÃO 10 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE III</div>
+  <h1>ATIVAÇÃO 10</h1>
+
+  <h2 class="capitulo-titulo">PRESENÇA QUE REVELA RESPEITO</h2>
+  <h3 class="capitulo-subtitulo">AUTORIDADE PERCEPTÍVEL</h3>
+
+  <img src="img/plancheco10.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    Respeito sempre parece vir de algo feito ou dito.<br>
+    Tentar merecer respeito cria distância sutil.<br>
+    Alguns recebem sem esforço.<br>
+    O esforço por reconhecimento afasta mais.<br>
+    As pessoas sentem o que não precisa provar.<br>
+    Você percebe o efeito do limite natural.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    Respeito conquistado nasce de estado fragmentado.<br>
+    Sem quietude interna, precisa de prova constante.<br>
+    Buscar merecimento diminui presença silenciosa.<br>
+    Cada prova fragmenta ancoragem.<br>
+    Quando a quietude se firma, o respeito surge sozinho.<br>
+    O interno basta.<br>
+    O espaço interno se mantém.<br>
+    O limite natural impõe respeito.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Não compense.<br>
+    Não se reduza.<br>
+    O espaço aceita.<br>
+    Você permanece.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Presença simples.<br>
+    Postura neutra.<br>
+    Nenhuma afirmação verbal.<br>
+    Os limites surgem sozinhos.<br>
+    Você não precisa marcá-los.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    O limite natural impõe respeito.<br>
+    A presença permanece firme.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
+
+
+<!-- ========= ATIVAÇÃO 11 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE III</div>
+  <h1>ATIVAÇÃO 11</h1>
+
+  <h2 class="capitulo-titulo">INVISIBILIDADE MASCULINA</h2>
+  <h3 class="capitulo-subtitulo">SER PERCEBIDO SEM SER VISTO</h3>
+
+  <img src="img/plancheco11.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    Multidões ocupa o espaço, mas não marca.<br>
+    Conversas seguem sem ajuste.<br>
+    Olhares passam direto.<br>
+    Nada se fixa.<br>
+    Quanto mais movimento, menos efeito.<br>
+    Algo em você não sustenta.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    Invisibilidade não nasce fora.<br>
+    Ela surge do desalinhamento.<br>
+    Sem base, o estado se dissolve.<br>
+    Compensar com volume derruba densidade.<br>
+    Quando o interno se fixa, a sustentação aparece.<br>
+    O centro se assenta.<br>
+    O espaço interno se mantém.<br>
+    A invisibilidade é reconhecida.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Pare de compensar.<br>
+    Sinta o vazio sem fugir.<br>
+    Mantenha-se inteiro.<br>
+    Permaneça.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Interação próxima. Pouca distância.<br>
+    Você permanece ali, sem buscar resposta.<br>
+    O outro fala mais do que pretendia.<br>
+    Pausas surgem sem motivo claro.<br>
+    Algo muda na forma como você é percebido.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    O ambiente permanece.<br>
+    A invisibilidade é reconhecida.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
+
+  
+  <!-- ========= ATIVAÇÃO 12 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE III</div>
+  <h1>ATIVAÇÃO 12</h1>
+
+  <h2 class="capitulo-titulo">PSICOLOGIA OCULTA DA PRESENÇA</h2>
+  <h3 class="capitulo-subtitulo">INFLUÊNCIA SILENCIOSA</h3>
+
+  <img src="img/plancheco12.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    Palavras comuns não alcançam o núcleo.<br>
+    Técnicas convencionais deixam vazio.<br>
+    O desejo surge sem lógica aparente.<br>
+    Algo invisível toca sem aviso.<br>
+    O externo jamais basta sozinho.<br>
+    Você sente que falta o impulso silencioso.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    A presença rasa nasce do desalinhamento interno.<br>
+    Sem profundidade, o estado não sustenta.<br>
+    Buscar reação externa corrói integridade.<br>
+    Cada tentativa consciente fragmenta densidade.<br>
+    Quando o espaço interno se abre, algo se organiza.<br>
+    O centro conecta antes do gesto.<br>
+    A coerência se assenta no corpo.<br>
+    O desejo silencioso é sentido.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Interrompa o excesso mental.<br>
+    Fique no corpo.<br>
+    Não se fragmente.<br>
+    Sinta.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Interação próxima, distância curta.<br>
+    Você não tenta conduzir.<br>
+    O outro se inclina sem perceber.<br>
+    O silêncio se alonga.<br>
+    A tensão cresce.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    O desejo se manifesta no silêncio.<br>
+    A presença se revela.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
   </div>
-
-</body>
-</html>
+  
+<a href="volume4.html" class="botao">Continuar</a>
+</section>
