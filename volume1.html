@@ -1,92 +1,115 @@
-<!DOCTYPE html>  <html lang="pt-BR">  
-<head>  
-  <meta charset="UTF-8">  
-  <title>VMP • Fase II Completa</title>  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <style>  
-    body{  
-      background:#000;  
-      color:#fff;  
-      font-family:Arial, sans-serif;  
-      margin:0;  
-      line-height:1.55;  
-    }  
-  
-    .vmp-content{  
-      max-width:640px;  
-      margin:auto;  
-      padding:36px 18px;  
-      text-align:center;  
-    }  
-  
-    h1{  
-      color:#FFD700;  
-      font-size:36px;  
-      letter-spacing:2px;  
-      margin-bottom:6px;  
-    }  
-  
-    .fase{  
-      color:#FFD700;  
-      font-size:14px;  
-      letter-spacing:2px;  
-      margin-bottom:30px;  
-    }  
-  
-    h2{  
-      color:#FFD700;  
-      font-size:22px;  
-      margin-bottom:14px;  
-    }  
-  
-    h3{  
-      font-size:24px;  
-      margin-bottom:26px;  
-      color:#fff;  
-    }  
-  
-    p{  
-      margin:14px auto;  
-      font-size:18px;  
-      color:#eaeaea;  
-      max-width:620px;  
-    }  
-  
-    h4{  
-      margin-top:40px;  
-      margin-bottom:16px;  
-      font-size:18px;  
-      letter-spacing:1px;  
-      text-transform:uppercase;  
-    }  
-  
-    .imagem{  
-      margin:30px auto 40px;  
-      max-width:100%;  
-      border-radius:6px;  
-      aspect-ratio:4/5;  
-      object-fit:cover;  
-    }  
-  
-    .botao{  
-      display:inline-block;  
-      margin:80px auto 20px;  
-      padding:18px 52px;  
-      background:#FFD700;  
-      color:#000;  
-      text-decoration:none;  
-      font-weight:bold;  
-      border-radius:999px;  
-      font-size:17px;  
-    }  
-  
-    .botao:hover{opacity:0.9;}  
-  </style>    <!-- 🔐 BLOQUEIO CORRETO UPSSELL -->    <script>  
-    if(sessionStorage.getItem("vmp21_acesso") !== "ok"){  
-      window.location.href="acesso.html";  
-    }  
-  </script>  </head>  <body>  <div class="vmp-content">  
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>VMP • Volume 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+body{
+  background:#000;
+  color:#fff;
+  font-family:Arial, sans-serif;
+  margin:0;
+  line-height:1.55;
+}
 
-    <section class="ativacao">
+.vmp-content{
+  max-width:640px;
+  margin:auto;
+  padding:36px 18px;
+  text-align:center;
+}
+
+h1{
+  color:#FFD700;
+  font-size:36px;
+  letter-spacing:2px;
+  margin-top:14px;
+  margin-bottom:40px;
+}
+
+.linha-superior{
+  color:#FFD700;
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+p{
+  margin:14px auto;
+  font-size:18px;
+  color:#eaeaea;
+  max-width:620px;
+}
+
+/* ===== ESPAÇO ENTRE CAPÍTULOS ===== */
+.ativacao{
+  margin-top:100px;
+}
+
+.capa-volume{
+  margin-bottom:80px;
+}
+
+/* ===== IMG PLANChECO 4:5 ===== */
+.plancheco{
+  width:100%;
+  max-width:420px;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  border-radius:10px;
+  margin:40px auto;
+  display:block;
+}
+
+/* ===== BOTÃO CENTRAL ===== */
+.botao{
+  display:block;
+  width:max-content;
+  margin:100px auto 40px;
+  padding:18px 52px;
+  background:#FFD700;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:999px;
+  font-size:17px;
+}
+.botao:hover{opacity:0.9;}
+</style><!-- 🔐 BLOQUEIO UPSSELL --><script>
+if(sessionStorage.getItem("vmp21_acesso") !== "ok"){
+  window.location.href="acesso.html";
+}
+</script></head>
+<body>
+<div class="vmp-content"><!-- ===== CAPA ===== --><div class="capa-volume">
+  <div class="linha-superior">FASE II</div>
+  <h1>SEGUIR ADIANTE • 4 CAPÍTULOS</h1>
+  <p>
+    Corpo e expressão entram em alinhamento.
+    Você aprende a ocupar o espaço naturalmente.
+    O externo começa a responder ao seu estado interno.
+    A coerência substitui qualquer compensação.
+  </p>
+</div><!-- ===== CAPÍTULO 1 ===== --><section class="ativacao">
+<div class="linha-superior">FASE I</div>
+<h1>ATIVAÇÃO 1</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 1</p>
+<img src="img1.jpg" class="plancheco">
+</section><!-- ===== CAPÍTULO 2 ===== --><section class="ativacao">
+<div class="linha-superior">FASE I</div>
+<h1>ATIVAÇÃO 2</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 2</p>
+<img src="img2.jpg" class="plancheco">
+</section><!-- ===== CAPÍTULO 3 ===== --><section class="ativacao">
+<div class="linha-superior">FASE I</div>
+<h1>ATIVAÇÃO 3</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 3</p>
+<img src="img3.jpg" class="plancheco">
+</section><!-- ===== CAPÍTULO 4 ===== --><section class="ativacao">
+<div class="linha-superior">FASE I</div>
+<h1>ATIVAÇÃO 4</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 4</p>
+<img src="img4.jpg" class="plancheco">
+</section><!-- ===== BOTÃO FINAL ===== --><a href="volume2.html" class="botao">Avançar</a>
+
+</div>
+</body>
+</html>
 
   <div class="linha-superior">FASE I</div>
   <h1>ATIVAÇÃO 1</h1>
