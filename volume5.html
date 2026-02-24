@@ -1,541 +1,440 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>VMP — Volume V</title>
+<meta charset="UTF-8">
+<title>VMP • Fase II Completa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AJUSTE MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.55;
-    }
+body{
+  background:#000;
+  color:#fff;
+  font-family:Arial, sans-serif;
+  margin:0;
+  line-height:1.55;
+}
 
-    .vmp-content {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 36px 18px;
-      text-align: center;
-    }
+.vmp-content{
+  max-width:640px;
+  margin:auto;
+  padding:36px 18px;
+  text-align:center;
+}
 
-    /* Título do Sistema */
-    h1 {
-      color: #FFD700;
-      font-size: 38px;
-      letter-spacing: 2.5px;
-      margin: 0 0 4px;
-      font-weight: 700;
-    }
+/* ===== ESPAÇO ENTRE ATIVAÇÕES ===== */
+.ativacao{
+  margin-top:120px;
+}
 
-    h2 {
-      color: #FFD700;
-      font-size: 22px;
-      letter-spacing: 1.4px;
-      margin: 0 0 40px;
-      font-weight: 700;
-    }
+/* PRIMEIRA ATIVAÇÃO COLADA NO TOPO */
+.ativacao:first-of-type{
+  margin-top:0;
+}
 
-    /* Título de Capítulo */
-    h3 {
-      color: #FFD700;
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      margin: 64px 0 22px;
-    }
+/* ===== FASE ===== */
+.linha-superior{
+  color:#FFD700;
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:6px;
+}
 
-    /* Subtítulos internos */
-    h4.subtitulo {
-      color: #ffffff !important;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 1.2px;
-      margin-top: 40px;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
+/* ===== ATIVAÇÃO (BRANCA) ===== */
+h1{
+  color:#fff;
+  font-size:36px;
+  letter-spacing:2px;
+  margin-bottom:30px;
+}
 
-    /* Texto */
-    p {
-      margin: 14px auto;
-      font-size: 18px;
-      line-height: 1.45;
-      letter-spacing: 0.1px;
-      color: #eaeaea;
-    }
+/* ===== MINI DESCRIÇÃO ===== */
+.mini-descricao{
+  margin-bottom:70px;
+  font-size:18px;
+  color:#eaeaea;
+}
 
-    /* Imagens do capítulo (padronizado Volume 1) */
-    img.imagem-vmp {
-      display: block;
-      margin: 30px auto 40px;
-      max-width: 100%;
-      border-radius: 6px;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-    }
+/* ===== CAPÍTULO ===== */
+h2{
+  color:#FFD700;
+  font-size:22px;
+  margin-top:40px;
+}
 
-    /* Espaço entre capítulos */
-    .fim-capitulo {
-      margin-bottom: 72px;
-    }
+h3{
+  font-size:24px;
+  margin-bottom:26px;
+}
 
-    /* Encerramento final do Volume V */
-    .encerramento {
-      margin-top: 80px;
-      margin-bottom: 40px;
-    }
+/* ===== TEXTO ===== */
+p{
+  margin:14px auto;
+  font-size:18px;
+  max-width:620px;
+}
 
-    .encerramento h1 {
-      color: #FFD700;
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin-bottom: 24px;
-    }
+/* ===== IMAGEM 4:5 GARANTIDA ===== */
+.imagem{
+  display:block;
+  margin:30px auto 40px;
+  width:100%;
+  max-width:420px;
 
-    .encerramento p {
-      font-size: 18px;
-      color: #fff;
-    }
+  aspect-ratio:4/5;
+  min-height:260px;
 
-    /* Botão */
-    .botao {
-      display: inline-block;
-      margin: 70px auto 20px;
-      padding: 18px 52px;
-      background-color: #FFD700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-      font-size: 17px;
-      letter-spacing: 0.5px;
-    }
+  object-fit:cover;
+  border-radius:8px;
 
-    .botao:hover {
-      opacity: 0.9;
-    }
+  background:#111;
+  border:1px solid #FFD700;
+}
 
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
-      h4.subtitulo { font-size: 17px; }
-      p  { font-size: 16px; }
-    }
-  </style>
+/* ===== BOTÃO CENTRAL ===== */
+.botao{
+  display:block;
+  width:fit-content;
+  margin:100px auto 40px;
+  padding:18px 52px;
+  background:#FFD700;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:999px;
+  font-size:17px;
+}
+
+.botao:hover{opacity:0.9;}
+
+</style>
+
+<script>
+if(sessionStorage.getItem("vmp21_acesso") !== "ok"){
+  window.location.href="acesso.html";
+}
+</script>
+
 </head>
 
 <body>
-
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
-
-  <div class="vmp-content">
-
-    <!-- IDENTIDADE DO SISTEMA -->
-    <h1>SISTEMA V</h1>
-    <h2>DOMÍNIO</h2>
-
-    <!-- Capítulos finais do Sistema V --> 
-
-
-<h3>ATIVE SUA PRESENÇA REAL</h3>
-<p class="subtitulo">DECISÃO QUE CONSOLIDA O ESTADO</p>
-
-<!-- ESTILO PARA IMAGEM 4:5 (aplicável a todos os capítulos) -->
-<style>
-.imagem-vmp {
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  display: block;
-  margin: 22px auto 34px;
-  border-radius: 6px;
-}
-</style>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-    <img src="img/Imagem0041.png" alt="Imagem do Capítulo 41" class="imagem-vmp">
-
-<p>
-Está presente, mas algo ainda falta.<br>
-As pessoas olham, mas não sentem.<br>
-O corpo ocupa espaço, o ar permanece vazio.<br>
-Tentar ativar qualquer coisa só aumenta o esforço.<br>
-O silêncio dói quando nada muda.<br>
-Você sente o vazio entre o que é e o que poderia ser.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Presença adormecida nasce de eixo vacilante.<br>
-Sem decisão interna, o estado fica suspenso.<br>
-Buscar ativação externa rouba integridade.<br>
-Cada tentativa diminui densidade.<br>
-Quando a decisão interna é feita, a presença real desperta.<br>
-O centro ativa sozinho.<br>
-O estado se consolida no agora.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Pare.<br>
-Fique inteiro.<br>
-Nada acrescente.<br>
-Permaneça.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Momento comum.<br>
-Você decide parar de compensar.<br>
-Respira fundo.<br>
-Permanece.<br>
-Algo se encaixa.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Presença real não espera.<br>
-Ela ativa no agora.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>ESCOLHA INTERNA QUE MUDA TUDO</h3>
-<p class="subtitulo">RECONHECIMENTO QUE REDEFINE</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0042.png" alt="Imagem do Capítulo 42" class="imagem-vmp">
-
-<p>
-Você vive como se o controle estivesse fora.<br>
-As reações vêm e vão sem respostas.<br>
-O padrão se repete sem fim.<br>
-Tentar mudar o externo só reforça o ciclo.<br>
-Sente que algo dentro pode transformar isso.<br>
-O vazio persiste quando nada é escolhido.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Ciclo repetido nasce de falta de decisão interna.<br>
-Sem escolha consciente, o estado reage.<br>
-Buscar mudança externa rouba consistência.<br>
-Cada reação diminui sustentação interna.<br>
-Quando a decisão interna é feita, o ciclo quebra.<br>
-O centro decide sozinho.<br>
-O estado muda de dentro para fora.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Um passo interno.<br>
-Sem retorno.<br>
-O antigo cai.<br>
-O novo sustenta.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Nenhum ritual.<br>
-Nenhuma preparação.<br>
-Só uma decisão silenciosa.<br>
-Você não volta atrás.<br>
-O mundo responde depois.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Mudança não vem de fora.<br>
-Vem da escolha interna.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>VIRE O JOGO SEM EXPLICAÇÕES</h3>
-<p class="subtitulo">REJEIÇÃO QUIETA DO ANTIGO</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0043.png" alt="Imagem do Capítulo 43" class="imagem-vmp">
-
-<p>
-O jogo está contra você, e você sente.<br>
-As pessoas decidem antes da sua decisão.<br>
-Tentar explicar só enfraquece mais.<br>
-O silêncio cresce quando se tenta justificar.<br>
-O vazio aumenta quando se explica demais.<br>
-Você nota o momento em que tudo pode inverter.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Jogo perdido nasce de estado fragmentado.<br>
-Sem quietude interna, precisa de defesa.<br>
-Buscar explicação rouba presença silenciosa.<br>
-Cada palavra diminui ancoragem.<br>
-Quando a quietude se firma, o jogo vira.<br>
-O interno inverte.<br>
-A virada surge do não explicar.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Não explique.<br>
-Não reaja.<br>
-O eixo segura.<br>
-O jogo muda.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Expectativas externas.<br>
-Você não responde a elas.<br>
-Age a partir de dentro.<br>
-O jogo muda de direção.<br>
-Sem anúncio.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Virar o jogo não explica.<br>
-Só acontece.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>O HOMEM QUE INSPIRA RESPEITO E DESEJO</h3>
-<p class="subtitulo">ESTADO UNIFICADO QUE DÁ PESO</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-    <img src="img/Imagem0044.png" alt="Imagem do Capítulo 44" class="imagem-vmp">
-
-<p>
-Alguns homens inspiram sem tentar.<br>
-Tentar inspirar um ou outro separa os dois.<br>
-O ambiente sente algo que não é dito.<br>
-O antigo esforço separa.<br>
-O vazio cresce quando se tenta ser admirado.<br>
-Você vê que respeito e desejo vêm juntos.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Inspiração separada nasce de desconexão interna.<br>
-Sem centro firme, respeito e desejo se dividem.<br>
-Buscar um rouba coerência.<br>
-Cada tentativa diminui densidade.<br>
-Quando o centro se firma, respeito e desejo surgem juntos.<br>
-O interno inspira.<br>
-O homem se torna consequência natural.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Nada separado.<br>
-Tudo integrado.<br>
-O corpo expressa.<br>
-O estado conduz.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Presença constante.<br>
-Gestos contidos.<br>
-Olhar limpo.<br>
-As reações se dividem.<br>
-Você não escolhe nenhuma.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-O homem não inspira um.<br>
-Ele inspira ambos.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>DEIXE DE SER COMUM — TORNE-SE MEMORÁVEL</h3>
-<p class="subtitulo">REJEIÇÃO INTERNA DO MÉDIO</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0045.png" alt="Imagem do Capítulo 45" class="imagem-vmp">
-
-<p>
-A maioria passa e some no mesmo dia.<br>
-Conversas seguem, risadas continuam.<br>
-O comum permanece invisível.<br>
-Tentar ser diferente só destaca o esforço.<br>
-O vazio cresce quando ninguém se lembra.<br>
-Você entra e deixa efeito no ambiente.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Ser comum nasce de estado fragmentado.<br>
-Sem profundidade, o estado não deixa rastro.<br>
-Buscar diferença externa diminui densidade.<br>
-Cada tentativa enfraquece ancoragem.<br>
-Quando a profundidade se firma, o memorável surge.<br>
-O interno cria rastro.<br>
-O comum desaparece.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Nada comum.<br>
-Nada exibido.<br>
-O estado marca.<br>
-O símbolo nasce.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Você para de se misturar.<br>
-Também não se destaca.<br>
-Permanece sólido.<br>
-As comparações surgem.<br>
-Você não participa.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Comum é esquecido.<br>
-Memorável é sentido.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>O DOMÍNIO JÁ ESTÁ DENTRO DE VOCÊ</h3>
-<p class="subtitulo">RECONHECIMENTO DA PRESENÇA</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0046.png" alt="Imagem do Capítulo 46" class="imagem-vmp">
-
-<p>
-O domínio parece sempre algo a conquistar.<br>
-Tentar dominar o externo aumenta a luta.<br>
-Você sente que o controle real já existe por dentro.<br>
-As pessoas cedem ao que não luta.<br>
-O esforço externo cansa.<br>
-O vazio persiste quando se procura fora.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Domínio externo nasce de desconexão interna.<br>
-Sem centro firme, o estado depende de prova.<br>
-Buscar controle fora diminui consistência.<br>
-Cada luta enfraquece sustentação interna.<br>
-Quando o centro se firma, o domínio já está.<br>
-O interno basta.<br>
-O controle surge.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Não procure fora.<br>
-Não antecipe.<br>
-O centro existe.<br>
-O domínio fica.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Nada novo é adicionado.<br>
-Nada é aprendido.<br>
-Algo antigo se organiza.<br>
-Você reconhece.<br>
-E sustenta.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Domínio não é conquistado.<br>
-Já está dentro.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <h3>A ATIVAÇÃO FINAL: O MUNDO VAI SENTIR</h3>
-<p class="subtitulo">ACEITAÇÃO ABSOLUTA QUE CONSOLIDA</p>
-
-<!-- ESPAÇO RESERVADO PARA IMAGEM DO CAPÍTULO -->
-<img src="img/Imagem0000047.png" alt="Imagem do Capítulo 47" class="imagem-vmp">
-
-<p>
-Algo ainda não se soltou dentro.<br>
-O mundo continua indiferente ao redor.<br>
-Tentar ativar qualquer coisa só aumenta o vazio.<br>
-O ar pesa, nada é liberado.<br>
-Você percebe o silêncio por dentro.<br>
-O vazio aumenta quando a ativação não chega.
-</p>
-
-<h4 class="subtitulo">REALINHAMENTO:</h4>
-<p>
-Ativação incompleta nasce de eixo vacilante.<br>
-Sem liberação interna, o estado fica contido.<br>
-Buscar reação externa dilui integridade.<br>
-Cada contenção diminui peso interno.<br>
-Quando o eixo se libera, a ativação final acontece.<br>
-O interno reverbera em silêncio.<br>
-O mundo sente como consequência.
-</p>
-
-<h4 class="subtitulo">INSTALAÇÃO:</h4>
-<p>
-Silêncio total.<br>
-Corpo inteiro.<br>
-Nada antes.<br>
-Nada depois.
-</p>
-
-<h4 class="subtitulo">REFINAMENTO:</h4>
-<p>
-Você entra em silêncio.<br>
-Permanece inteiro.<br>
-Não busca efeito.<br>
-O ambiente responde.<br>
-O ciclo se fecha.
-</p>
-
-<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-<p>
-Ativação final não anuncia.<br>
-O mundo simplesmente sente.
-</p>
-
-<div class="fim-capitulo"></div>
-
-
-    <!-- FECHAMENTO OFICIAL DO VMP -->
-    <div class="encerramento">
-      <h1>CICLO CONCLUÍDO</h1>
-      <p>
-        Você concluiu o VMP.<br>
-        A presença silenciosa agora é parte de você.
-      </p>
-    </div>
-
-  </div>
-</body>
-</html>
+<div class="vmp-content">
+
+
+  <!-- ========= ATIVAÇÃO 17 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE V</div>
+  <h1>ATIVAÇÃO 17</h1>
+
+  <p class="mini-descricao">
+Aprende a alinhar postura e respiração.<br>
+O corpo passa a refletir estabilidade interna.<br>
+Movimentos ficam naturais e precisos.<br>
+A presença começa no físico.
+</div>
+
+  <h2 class="capitulo-titulo">VERDADE QUE IMPÕE AUTORIDADE</h2>
+  <h3 class="capitulo-subtitulo">AUTENTICIDADE QUE INFLUENCIA</h3>
+
+  <img src="img/plancheco17.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    Sustentar uma versão fabricada cansa.<br>
+    A tensão não relaxa nem em silêncio.<br>
+    Camadas de fingimento comprimem o interno.<br>
+    Algo precisa ser mantido o tempo todo.<br>
+    No esforço de sustentar a fachada, você se dispersa.<br>
+    Quando algo cede, o peso aparece.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    A presença falsa nasce do desalinhamento interno.<br>
+    Manter a máscara fragmenta o eixo.<br>
+    Aceitar mentiras internas corrói integridade.<br>
+    Cada concessão derruba densidade.<br>
+    Quando a verdade é escolhida, o eixo retorna.<br>
+    O interno se reorganiza.<br>
+    A coerência se assenta no corpo.<br>
+    A máscara se desfaz.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Pare de provar.<br>
+    Sinta o corpo firme.<br>
+    Não acrescente nada.<br>
+    Busque.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Ambiente simples, conversa leve.<br>
+    Você não tenta sustentar imagem alguma.<br>
+    Alguém se aproxima mais do que antes.<br>
+    O clima fica direto.<br>
+    Nada é forçado.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    A autenticidade sustenta.<br>
+    O eixo mantém integridade.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
+
+  <!-- ========= ATIVAÇÃO 18 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE V</div>
+  <h1>ATIVAÇÃO 18</h1>
+
+  <h2 class="capitulo-titulo">CÓDIGO DA AUTOCONFIANÇA INABALÁVEL</h2>
+  <h3 class="capitulo-subtitulo">EIXO QUE DETERMINA A FIRMEZA</h3>
+
+  <img src="img/plancheco18.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    Confiança vacila com cada olhar alheio.<br>
+    A inabalável não depende de ninguém.<br>
+    Tentar construir confiança externa fragiliza.<br>
+    Você sente que algo precisa se confirmar.<br>
+    O código é sempre interno.<br>
+    A presença interna dita respeito antes de qualquer gesto.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    Confiança frágil nasce de eixo vacilante.<br>
+    Sem decisão interna, o estado depende do externo.<br>
+    Buscar validação diminui consistência.<br>
+    Cada hesitação reduz sustentação interna.<br>
+    Quando a decisão interna se firma, a confiança vira código.<br>
+    O centro é inabalável.<br>
+    A coerência se assenta no corpo.<br>
+    O código da autoconfiança se manifesta.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Nada a provar.<br>
+    Nada a defender.<br>
+    O corpo sabe.<br>
+    A firmeza permanece.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Situação comum.<br>
+    Você não se ajusta ao olhar externo.<br>
+    Não busca confirmação.<br>
+    O corpo responde primeiro.<br>
+    A mente acompanha depois.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    A conduta se firma.<br>
+    A confiança permanece.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
+
+  <!-- ========= ATIVAÇÃO 19 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE V</div>
+  <h1>ATIVAÇÃO 19</h1>
+
+  <h2 class="capitulo-titulo">DEIXE O COMUM, TORNE-SE DIFERENTE</h2>
+  <h3 class="capitulo-subtitulo">EIXO QUE DETERMINA O RITMO</h3>
+
+  <img src="img/plancheco19.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    A maioria passa e some no mesmo dia.<br>
+    Conversas seguem, risadas continuam.<br>
+    Você entra e percebe que o comum permanece.<br>
+    Tentar ser diferente só destaca o esforço.<br>
+    O vazio cresce quando ninguém se lembra.<br>
+    O efeito do seu estado marca o ambiente.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    Ser comum nasce de estado fragmentado.<br>
+    Sem profundidade, o estado não deixa rastro.<br>
+    Buscar diferença externa diminui densidade.<br>
+    Cada tentativa enfraquece ancoragem.<br>
+    Quando a profundidade se firma, o memorável surge.<br>
+    O interno cria presença que se percebe.<br>
+    O espaço interno se mantém.<br>
+    O comum desaparece.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Nada comum.<br>
+    Nada exibido.<br>
+    O estado marca.<br>
+    O símbolo nasce.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Para de se misturar.<br>
+    Também não se destaca.<br>
+    Permanece sólido.<br>
+    As comparações surgem.<br>
+    Você não participa.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    O estado se destaca.<br>
+    O efeito permanece.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
+
+  <!-- ========= ATIVAÇÃO 20 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE V</div>
+  <h1>ATIVAÇÃO 20</h1>
+
+  <h2 class="capitulo-titulo">SILÊNCIO QUE ATIVA A PRESENÇA</h2>
+  <h3 class="capitulo-subtitulo">O IMPACTO DO NÃO-AGIR</h3>
+
+  <img src="img/plancheco20.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    Palavras em excesso saturam o ambiente.<br>
+    Quem fala demais se espalha.<br>
+    Mostrar só a superfície esconde tensão.<br>
+    O ruído ocupa tudo.<br>
+    No meio disso, você percebe que algo não se fixa.<br>
+    O silêncio começa a incomodar.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    Ajustar o tom não resolve.<br>
+    O problema nasce do desalinhamento interno.<br>
+    Sem eixo, o estado se fragmenta.<br>
+    Quietude forçada se rompe rápido.<br>
+    Quando o eixo se firma, algo se assenta.<br>
+    A coerência se organiza.<br>
+    O espaço interno se estabiliza.<br>
+    O silêncio deixa de ser esforço.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Pare o ruído.<br>
+    Sinta o centro.<br>
+    Não acrescente nada.<br>
+    Silencie.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Ambiente comum. Pessoas falando ao redor.<br>
+    Você permanece quieto por dentro.<br>
+    Olhares passam e retornam sem motivo claro.<br>
+    O ritmo das conversas muda.<br>
+    Algo se firma.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    O silêncio firme.<br>
+    A presença se mantém.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+</section>
+
+  <!-- ========= ATIVAÇÃO 21 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE V</div>
+  <h1>ATIVAÇÃO 21</h1>
+
+  <h2 class="capitulo-titulo">CICLO CONSOLIDADO</h2>
+  <h3 class="capitulo-subtitulo">CONTINUIDADE QUE SE SENTE</h3>
+
+  <img src="img/plancheco21.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
+
+  <p>
+    Movimentos ao redor se repetem sem padrão.<br>
+    O ritmo do ambiente flui naturalmente.<br>
+    Você permanece inteiro.<br>
+    Gestos surgem e desaparecem.<br>
+    Nada exige intervenção direta.<br>
+    O espaço ajusta-se silencioso.
+  </p>
+
+  <h4 class="subtitulo">REALINHAMENTO:</h4>
+  <p>
+    Coerência interna define padrões externos.<br>
+    O eixo firme influencia micro gestos.<br>
+    Vacilações desaparecem diante da estabilidade.<br>
+    O estado interno sustenta a reação do ambiente.<br>
+    O ritmo interno conduz sem esforço.<br>
+    Movimentos externos refletem controle silencioso.<br>
+    O campo responde à presença assentada.<br>
+    A continuidade se manifesta no ambiente.
+  </p>
+
+  <h4 class="subtitulo">INSTALAÇÃO:</h4>
+  <p>
+    Silêncio total.<br>
+    Corpo inteiro.<br>
+    Nada antes.<br>
+    Nada depois.
+  </p>
+
+  <h4 class="subtitulo">REFINAMENTO:</h4>
+  <p>
+    Você entra em silêncio.<br>
+    Permanece inteiro.<br>
+    Não busca efeito.<br>
+    O ambiente responde.<br>
+    O ciclo se fecha.
+  </p>
+
+  <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+  <p>
+    O círculo firme.<br>
+    Presença sustentada.
+  </p>
+
+  <div class="fim-capitulo"></div>
+
+  <!-- ======= FECHAMENTO FINAL ======= -->
+  <div class="sub">CICLO CONCLUÍDO</div>
+
+  <p class="dourado">
+    Você completou as ativações.<br>
+    A presença sustentada agora faz parte de você.<br>
+    O eixo interno permanece firme.<br>
+    Continue a progredir em silêncio.
+  </p>
+
+</section>
