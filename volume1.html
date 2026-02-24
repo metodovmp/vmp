@@ -1,8 +1,13 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
-<title>VMP • Volume 1</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+<title>VMP • Fase II Completa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
 body{
   background:#000;
   color:#fff;
@@ -18,14 +23,12 @@ body{
   text-align:center;
 }
 
-h1{
-  color:#FFD700;
-  font-size:36px;
-  letter-spacing:2px;
-  margin-top:14px;
-  margin-bottom:40px;
+/* ===== ESPAÇO ENTRE ATIVAÇÕES ===== */
+.ativacao{
+  margin-top:120px;
 }
 
+/* ===== TÍTULO ===== */
 .linha-superior{
   color:#FFD700;
   font-size:14px;
@@ -33,37 +36,54 @@ h1{
   margin-bottom:10px;
 }
 
+h1{
+  color:#FFD700;
+  font-size:36px;
+  letter-spacing:2px;
+  margin-bottom:30px;
+}
+
+/* ===== MINI DESCRIÇÃO ===== */
+.mini-descricao{
+  margin-bottom:70px;
+  font-size:18px;
+  color:#eaeaea;
+}
+
+/* ===== CAPÍTULO ===== */
+h2{
+  color:#FFD700;
+  font-size:22px;
+  margin-top:40px;
+}
+
+h3{
+  font-size:24px;
+  margin-bottom:26px;
+}
+
+/* ===== TEXTO ===== */
 p{
   margin:14px auto;
   font-size:18px;
-  color:#eaeaea;
   max-width:620px;
 }
 
-/* ===== ESPAÇO ENTRE CAPÍTULOS ===== */
-.ativacao{
-  margin-top:100px;
-}
-
-.capa-volume{
-  margin-bottom:80px;
-}
-
-/* ===== IMG PLANChECO 4:5 ===== */
-.plancheco{
+/* ===== IMAGEM 4:5 ===== */
+.imagem{
+  display:block;
+  margin:30px auto 40px;
   width:100%;
   max-width:420px;
+  border-radius:6px;
   aspect-ratio:4/5;
   object-fit:cover;
-  border-radius:10px;
-  margin:40px auto;
-  display:block;
 }
 
-/* ===== BOTÃO CENTRAL ===== */
+/* ===== BOTÃO CENTRALIZADO ===== */
 .botao{
   display:block;
-  width:max-content;
+  width:fit-content;
   margin:100px auto 40px;
   padding:18px 52px;
   background:#FFD700;
@@ -73,43 +93,36 @@ p{
   border-radius:999px;
   font-size:17px;
 }
+
 .botao:hover{opacity:0.9;}
-</style><!-- 🔐 BLOQUEIO UPSSELL --><script>
+
+</style>
+
+<script>
 if(sessionStorage.getItem("vmp21_acesso") !== "ok"){
   window.location.href="acesso.html";
 }
-</script></head>
-<body>
-<div class="vmp-content"><!-- ===== CAPA ===== --><div class="capa-volume">
-  <div class="linha-superior">FASE II</div>
-  <h1>SEGUIR ADIANTE • 4 CAPÍTULOS</h1>
-  <p>
-    Corpo e expressão entram em alinhamento.
-    Você aprende a ocupar o espaço naturalmente.
-    O externo começa a responder ao seu estado interno.
-    A coerência substitui qualquer compensação.
-  </p>
-</div><!-- ===== CAPÍTULO 1 ===== --><section class="ativacao">
-<div class="linha-superior">FASE I</div>
-<h1>ATIVAÇÃO 1</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 1</p>
-<img src="img1.jpg" class="plancheco">
-</section><!-- ===== CAPÍTULO 2 ===== --><section class="ativacao">
-<div class="linha-superior">FASE I</div>
-<h1>ATIVAÇÃO 2</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 2</p>
-<img src="img2.jpg" class="plancheco">
-</section><!-- ===== CAPÍTULO 3 ===== --><section class="ativacao">
-<div class="linha-superior">FASE I</div>
-<h1>ATIVAÇÃO 3</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 3</p>
-<img src="img3.jpg" class="plancheco">
-</section><!-- ===== CAPÍTULO 4 ===== --><section class="ativacao">
-<div class="linha-superior">FASE I</div>
-<h1>ATIVAÇÃO 4</h1><p>COLE AQUI O TEXTO DO CAPÍTULO 4</p>
-<img src="img4.jpg" class="plancheco">
-</section><!-- ===== BOTÃO FINAL ===== --><a href="volume2.html" class="botao">Avançar</a>
+</script>
 
-</div>
-</body>
-</html>
+</head>
+
+<body>
+<div class="vmp-content">
+
+<!-- ========= ATIVAÇÃO 1 ========= -->
+<section class="ativacao">
+
+  <div class="linha-superior">FASE I</div>
+  <h1>ATIVAÇÃO 1</h1>
+
+  <p class="mini-descricao">
+    Sua mini descrição aqui.
+  </p>
+
+</section>
+
+  <!-- ========= ATIVAÇÃO 1 ========= -->
+<section class="ativacao">
 
   <div class="linha-superior">FASE I</div>
   <h1>ATIVAÇÃO 1</h1>
@@ -125,6 +138,11 @@ if(sessionStorage.getItem("vmp21_acesso") !== "ok"){
   <h3 class="capitulo-subtitulo">EIXO FIRME SOB PRESSÃO</h3>
 
   <img src="img/placeholder.png" alt="" class="imagem-vmp">
+
+  <!-- aqui continua o texto do capítulo -->
+
+</section>
+  
 
   <p>
     O domínio parece sempre algo a conquistar.<br>
