@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Fase II completa VMP — Acesso</title>
+  <title>VMP • 5 Fases Completas — Acesso</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -30,7 +30,7 @@
     }
 
     .linha-superior {
-      color: #fff;
+      color: #9a9a9a;   /* CINZA PREMIUM */
       font-size: 12px;
       letter-spacing: 3px;
     }
@@ -44,7 +44,7 @@
     }
 
     .sub {
-      color: #aaa;
+      color: #9a9a9a;   /* CINZA PREMIUM */
       font-size: 13px;
     }
 
@@ -67,11 +67,10 @@
 <body>
 
   <div class="box">
-    <div class="linha-superior">ÁREA RESTRITA • FASE II</div>
+    <div class="linha-superior">ÁREA RESTRITA</div>
     <h1>Digite seu código de acesso</h1>
-    <div class="sub">21 Ativações • Avanço VMP</div>
-    <button class="btn-codigo" onclick="verificar()">Inserir Código</button>
-  </div>
+    <div class="sub">21 Ativações • 5 Fases Completas</div>
+<button class="btn-codigo" onclick="verificar()">Inserir Código</button>
 
   <script>
     function verificar() {
@@ -81,10 +80,7 @@
 
       if (senhaDigitada === senhaCorreta) {
 
-        // libera acesso Upsell
         sessionStorage.setItem("vmp21_acesso", "ok");
-
-        // redireciona
         window.location.href = "index.html";
 
       } else {
