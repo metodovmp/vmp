@@ -30,7 +30,7 @@
     }
 
     .linha-superior {
-      color: #9a9a9a;   /* CINZA PREMIUM */
+      color: #9a9a9a;
       font-size: 12px;
       letter-spacing: 3px;
     }
@@ -44,7 +44,7 @@
     }
 
     .sub {
-      color: #9a9a9a;   /* CINZA PREMIUM */
+      color: #9a9a9a;
       font-size: 13px;
     }
 
@@ -70,7 +70,8 @@
     <div class="linha-superior">ÁREA RESTRITA</div>
     <h1>Digite seu código de acesso</h1>
     <div class="sub">21 Ativações • 5 Fases Completas</div>
-<button class="btn-codigo" onclick="verificar()">Inserir Código</button>
+    <button class="btn-codigo" onclick="verificar()">Inserir Código</button>
+  </div> <!-- ✅ FECHAMENTO QUE FALTAVA -->
 
   <script>
     function verificar() {
@@ -79,10 +80,8 @@
       const senhaDigitada = prompt("Digite sua senha:");
 
       if (senhaDigitada === senhaCorreta) {
-
         sessionStorage.setItem("vmp21_acesso", "ok");
         window.location.href = "index.html";
-
       } else {
         alert("Código inválido");
       }
